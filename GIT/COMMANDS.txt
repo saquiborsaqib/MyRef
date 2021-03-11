@@ -1,0 +1,98 @@
+Git
+	version control system
+
+Repositories (REPO'S)
+	A repo is a container for a project you want to track with Git (e.g. a website project)
+	Can have many different repo's for many different projects on your computer
+	like a project folder which Git tracks the contents of for us
+	repo's can be remote or local
+
+States of a REPOSITORIES 
+	Modified:
+		changed files not Commited
+
+	Staging
+		Add any changed files to staging that you want to commit
+
+	Commited
+		Any files in the staging area are added to the commit when we make one
+
+Git Configuration
+	git config --global user.name <name>
+	git config --global user.email <mailid>
+	git config --global user.password <password>
+
+Git initilization / Make a git repository
+	1. go into the folder, that you want to make repository
+	2. run git init command 
+
+Get Git's repo's details:
+	git status	(shows the status of repo's stage)
+	git diff	(shows the detail of modifications)
+
+	git log		(shows the history of commits)
+	git log --oneline
+
+Adding into Staging area
+	git add <name of the file>	(add just a file)
+	git add .	(this command add all files and changes in repo)
+
+Removing from Staging area
+	git rm --cached <file>
+
+Adding into commited stage
+	git commit -m "commit msg"
+
+Undoing Things
+	Checkout commit
+		(This goes into commit history only in read only mode) 
+		git checkout <commit id>
+		git checkout master	(reattach to master branch)
+
+	Revert commit
+		(Undo a commit)
+		git revert <commit id>
+
+	Reset commit
+		(Permanently get back in time or particular commit)
+		git reset <commit id>	(this command reset the commit but keep the code as it is in the yexy editor)
+		git reset <commit id> --hard	(this command reset the commit complitly)
+
+Branches
+	Viewing all Branches
+		git branch -a
+	
+	Create Branch 
+		git branch <NameOfBranch>
+	
+	Switching to branch
+		git checkout -b <NameOfBranch>	(this command do both creats and switch to a branch)
+		git checkout <NameOfBranch>
+	
+	Delete Branch
+		git branch -d <NameOfBranch>	(lower case d : when branch is merged)
+		git branch -D <NameOfBranch>	(upper case D : when branch is not merged)
+
+	Merging Branches
+		go into the branch in which you want to merge a branche
+		git merge <NameOfBranch>
+	
+
+
+GitHub
+	is a service that lets us set up hosted repositories
+	Central online repository which multiple team-members could access
+
+	Setting alies
+		git remote add <alies> <RepoAddress>
+
+	Clonning remote repository
+		git clone <RepoAddress>
+
+	Push git repo
+		git push <RepoAddress> <BranchName>
+		git push <alies> <BranchName> (if alies is already been set)
+
+	Pull git repo
+		git pull <RepoAddress/alies> <BranchName>
+		git pull origin master

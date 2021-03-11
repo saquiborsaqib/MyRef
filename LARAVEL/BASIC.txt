@@ -1,0 +1,107 @@
+Laravel 
+	follows MVC (Model View Control) approach
+
+Download and Install "Composer"
+
+Install Laravel
+	by typing in terminal: composer global require laravel/installer
+
+Making new laravel project
+	go into directory(in cmd) where you want to make a project
+	then type : laravel new Project_name
+
+Artisan
+	is a command line interface included with laravel.
+	it facilitate the project development services.
+
+Run Laravel Project
+	php artisan serve
+
+Passing Data to a View
+	Route::get('/route', function () {
+    	return view('View_name',['Var'=>'value',..]);
+	});
+
+Blade
+	Accessing variable 
+		{{ $variable_name }}
+
+	Directives
+		@if()
+			//code here
+		@elseif()
+			//code here
+		@else
+			//code here
+		@endif
+
+		@unless
+			//code here
+		@endunless
+
+		@php
+			//code here
+		@endphp
+
+	Loops
+		@for(initializer; condition; update)
+			//code here
+		@endfor
+
+		@foreach($array as $ref)
+			//code here
+		@endforeach
+
+	@extends('path.layout')
+
+	@section('section_name')
+		//html code here
+	@endsection
+
+	@yield('section_name')
+
+Query parameter
+	accessed by the request function:
+		Route::get('/route', function () {
+			$var=request('variable_name');
+    		return view('View_name');
+		});
+		
+
+Route parameter (wildcards)
+	Route::get('/route{id}', function ($id) {
+		
+    	return view('View_name');
+	});
+
+Creating control in laravel project(from vscode terminal)
+	php artisan make::controller PizzaController
+
+Creating Database in laravel project (from terminal)
+	add mysql bin folder in PATH variable
+
+	update name of the database in .env file
+
+	Create Table:
+		mysql -u root //login in db
+		create database pizzahouse;
+
+	Migration 
+	{allows us to programaticlly(from our code) define the structure of the table in our db.}
+	{migration file are store in the laravel project/database/migrations}
+	Creating Migration file using artisan
+		php artisan make:migration tablename
+	Running Migration
+		php artisan migrate
+		migrate:fresh        Drop all tables and re-run all migrations
+		migrate:install      Create the migration repository
+		migrate:refresh      Reset and re-run all migrations
+		migrate:reset        Rollback all database migrations
+		migrate:rollback     Rollback the last database migration
+		migrate:status       Show the status of each migration
+
+Eloquent Models
+	create Model in artisan
+		php artisan make:model ModelName
+
+
