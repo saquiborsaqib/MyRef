@@ -92,7 +92,10 @@ GitHub
 	Push git repo
 		git push <RepoAddress> <BranchName>
 		git push <alies> <BranchName> (if alies is already been set)
+		git push <alies> -f <BranchName>	(force push)
 
 	Pull git repo
 		git pull <RepoAddress/alies> <BranchName>
 		git pull origin master
+
+git rebase -i origin/integration
