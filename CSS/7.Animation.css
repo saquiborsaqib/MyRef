@@ -1,0 +1,42 @@
+/**********CSS Animations***********/
+
+
+tag{
+    /********Transform***************
+    * transform property transfor the element in the html doc.
+    * it take function as an value like translate(),etc.*/
+    transform: ;
+        /* translate value move the element 
+        * translate()
+        * translateX()
+        * translateY()
+        * translateZ()
+        * translate3d()*/
+
+        /* scale value strach the element
+        * scale takes the __ value in parameters
+        * scale()
+        * scaleX()
+        * scaleY()*/
+
+        /*rotate takes the deg(degree) value in parameters
+        * rotate()
+        * rotateX()
+        * rotateY()
+        * rotateZ()*/
+    
+    
+    /********Transition*************
+    * This property set the time in which the whole transition take place*/
+    transition: duration delay timing-function;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    
+    /* If U want to perform different transition to different properties then:*/
+    transition: 
+        propertyname1 1s .5s ease-in, 
+        propertyname2 2s;
+}
+
+    

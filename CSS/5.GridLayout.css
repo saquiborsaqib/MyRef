@@ -1,0 +1,60 @@
+/*CSS Grid Layout 
+offers a grid based layout system, with rows and columns makingit easier to design webpages without having to use float and position property
+A grid layout consists of a parent element, withone or more child elements.
+*/
+
+.grid_container{
+    /*An HTML element becomes a grid_container when its display property is set to grid.
+    All direct children of grid_container automatically become grid items.*/
+    display: grid;
+    
+    
+    /*********************************Columns**************************************
+    grid-template-columns: This property defines the number of columns and width of each column in your grid layout*/
+    grid-template-columns: 33.3% 33.3% 33.3%; /*By percentages*/
+    grid-template-columns:1fr 1fr 1fr; /*By friction*/
+    grid-template-columns:repeat(9,1fr); /*By repeat function*/
+    
+    
+    /***********************************Rows*******************************************
+    grid-template-rows: This property defines the number of rows and height of each row in your grid layout*/
+    grid-template-rows: repeat(3,1fr);
+    /*    or     
+    grid-auto-rows: This Property only define the height of each row in grid layout*/
+    grid-auto-rows: minmax(200px,auto); 
+    
+    
+    /*********************************Grid Gaps*******************************************/
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    /*    or     */
+    grid-gap: 5px;
+    
+    
+    /********************************Grid Lines*******************************************
+    These properties place a grid item according to its rows and columns lines*/
+    grid-column: start/end or span <no_of_columns>;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row: start/end or span <no_of_rows>;
+    grid-row-start: ;
+    grid-row-end: ;
+    
+    
+    /********************************Grid Area********************************************************
+    grid-area : this property can be used as a Shorthand property for the grid-row and grid-column properties*/
+    grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-end;
+    /*     or     
+    The grid-area property can also be used to assign names to grid items.*/
+    
+    
+    /***************************Grid Template Area****************************************************
+    Named Grid items can be refered to by the grid-template-areas property of the grid container.
+    Each row is defined by apostrophes ''.
+    The column in each row is defined inside the apostrophes,seprated by a space.
+    A .(period) sign represents a grid item with no name.*/
+    grid-template-areas: 
+        'name name name'
+        'name name name'
+        'name name name';
+}

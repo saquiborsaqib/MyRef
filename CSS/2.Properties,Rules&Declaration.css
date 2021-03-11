@@ -1,0 +1,32 @@
+/*************Size Measurments******************
+  ABSOLUTE
+    - Pixels (px)
+
+  RELATIVE
+    -Em's (em)
+    -Percentage (%)
+  Relative measurments are great when working with responsive designs
+*/
+
+/**************The BOX Model***********************
+The box model controls the spacing properties(margin, padding, border, width nd height) of block level elements
+***************************************************/
+
+
+tag{
+  font-size: ;
+  font-family: ;
+  font-weight: ;
+  text-transform: ;
+  letter-spacing: ;
+  line-height: ;
+  word-spacing: ;
+  margin: ;/*top right bottom left*/ /*top&bottom left&right*/
+  padding: ;
+}
+
+/*centring by the margin property
+To do this
+give the margin or top&bottom what u want nd
+give auto to right&left margin
+ex: margin: 5px auto;*/

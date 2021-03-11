@@ -1,0 +1,130 @@
+/* Class */
+	.class_name{
+		_____:_______;
+		_____:_______;
+	}
+
+/* Id */
+	#id_name{
+		_____:_______;
+		_____:_______;
+	}
+
+/**********************Tag***************************************/
+	tag_name{
+		_____:_______;
+		_____:_______;
+	}
+
+/***************Specificity of Rules in CSS******************************
+* In CSS every selector has a different piriority.
+* like:
+* ID has 100 points,
+* CLASS has 10 points,and
+* ELEMENT has 1 points.
+* Higher point selector override the rule of selector with less points.
+***********************************************************************/
+
+/****************Important Decaration*********************************
+it override ever selector rule no matter what there points is*/
+p{
+  color:red !important;
+}
+
+
+/***************Targeting Multiple Element***************************/
+p, span, a, li, #id, .class{
+  _______:_____;
+}
+
+/*********Universal Selector : Targets All Elements******************/
+*{
+
+}
+
+/***********************hierarchy*************************************
+*Every element nested into another elment is the Descendant of the overlaping element.
+*like:
+<div id="parent">
+  <p></p>
+  <div id="child">
+    <p></p>
+  </div>
+</div>
+*/
+
+/**************Descendants Selector********************************/
+#parent p{
+
+}
+
+/************Child Selector***************************************
+  >  Direct Descendant sign*/
+#parent > p{
+
+}
+
+/***********Adjacent Selector************************************
+	+  next element/adjecent elment*/
+#parent p + #child{
+
+}
+
+/**********Attributes selector***********************************
+This only select the tag which have an attribute and a specific value
+it also supports pattern matching like:
+	^ start with symbol
+	$ end with symbol
+	~ substring symbol*/
+tag_name[attribute="value"]{
+
+}
+
+/********Pseudo Classes****************************************
+*	Special Keywords that go after selectors
+
+*	They can be used to target:
+		- Special behavioural states
+		- Advanced structural Elements
+
+*	Pseudo Class Groups:
+		DYNAMIC - based on behaviour
+		Allow us to style an element in relation to user actions,
+		such as:
+			- Whether a link is being hovered over
+			- Whether a button is being pressed
+			- whether a tick boxhas been checked
+		Most popular dynamic Pseudo classes:
+			- :hover
+			- :active
+			- :visited
+
+		STRUCTURAL - advanced STRUCTURAL
+		Allow us to style elements based on advanced structural techniques not possible from ordinary CSS selectors,
+		such as:
+			- parent-child relationships
+			- the 5th <li>tap in a list
+			- a parent tag that has no children
+		someof them are:
+			:first-child
+			:last-child
+			:first-of-type
+			:last-of-type
+			:nth-child(number)
+			:nth-child(even)
+			:nth-child(odd)
+			:nth-child(formulas)
+			:nth-of-type()
+
+* Syntax:
+		selector:keyword{
+
+		}
+*************************************************************/
+
+/**************Combining Selectors*************************
+This means select a paragraph tag with class description.
+Dont put space in between otherwise it become the Descendant selector*/
+p.description{
+
+}

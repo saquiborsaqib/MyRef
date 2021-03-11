@@ -1,0 +1,25 @@
+/*Floating properties change the normal flow of webpage and float the element to left or right*/
+tag{
+  float:left;
+}
+
+/*Clearing Floats*/
+/*There are several ways to clear the float
+  some of them are:
+
+  1. Putting clear propertie in the next element
+
+  2. Putting empty div in html document
+    <div style="clear:both;"></div>
+    This method put an extra code in html code so it doesn't consider very best way
+
+  3. tag:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    This method is the best way of clearing float
+*/
+
+/*Position Property*/
+/* STATIC | RELATIVE| ABSOLUTE | FIXED | INHERIT */

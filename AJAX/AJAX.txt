@@ -1,0 +1,45 @@
+AJAX (Asynchronous JavaScript And XML)
+
+AJAX uses a combination of:
+	A browser built-in XMLHttpRequest Object(to request data from a web server).
+	JavaScript and HTML DOM(to display or use the data).
+	
+AJAX can:
+	Update a web page without reloading the page.
+	Request data from a server - after the page has loaded.
+	Receive data from a server - after the page has loaded.
+	Send Data to a server - in the background.
+	
+The XMLHttpRequest Object
+	Methods:
+		new XMLHttpRequest();
+			Constructor that create an XMLHttpRequest object
+		
+		open(method,url,async,user,pass);
+			specifies the request.
+			
+		send();
+			send the request to the server.
+			
+	Properties:
+		onreadystatechange=function(){//action when request is respond};
+		
+		readyState;
+			holds the status of the XMLHttpRequest.
+			0:Request not Initialized
+			1:Server Connection Established
+			2:Processing Request
+			3:Request Finished and Response is Ready
+			
+		status;
+			return the status number of a request
+			200:"OK"
+		
+		statusText;
+			Return the status text
+			
+		responseText;
+			Return the response data as a string
+			
+		responseXML;
+			Return the response data as an XML data
