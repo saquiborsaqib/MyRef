@@ -17,8 +17,44 @@ Making new laravel project
 	go into directory(in cmd) where you want to make a project
 	then type : laravel new Project_name
 	
-Initial configuration
+Configuration
+	Initial : All of the configuration files for the Laravel framework are stored in the config directory.
+	Environment Based Configuration at .env file at root.
+	# Retrieving Environment Configuration
+		'debug' => env('APP_DEBUG', false),
+	# Determining The Current Environment
+		use Illuminate\Support\Facades\App;
+		$environment = App::environment();
+		
+		if (App::environment('local')) {
+    			// The environment is local
+		}
+
+		if (App::environment(['local', 'staging'])) {
+    			// The environment is either local OR staging...
+		}
+	# Accessing Configuration Values
+		You may easily access your configuration values using the global config helper function from anywhere in your application. The configuration values may be accessed using "dot" syntax, which includes the name of the file and option you wish to access. 
+			$value = config('app.timezone');
+		To set configuration values at runtime, pass an array to the config helper:
+			config(['app.timezone' => 'America/Chicago']);
 	
+Lifecycle Overview
+	# First Steps
+		The entry point for all requests to a Laravel application is the public/index.php file.
+		The index.php file doesn't contain much code. Rather, it is a starting point for loading the rest of the framework.
+	# HTTP / Console Kernels
+		Next, the incoming request is sent to either 
+			the HTTP kernel or 
+			the console kernel, 
+		depending on the type of request that is entering the application.
+		These two kernels serve as the central location that all requests flow through. 
+	# Service Providers
+		One of the most important kernel bootstrapping actions is loading the service providers for your application. All of the service providers for the application are configured in the config/app.php configuration file's providers array.
+	# Routing
+		Once the application has been bootstrapped and all service providers have been registered, the Request will be handed off to the router for dispatching. The router will dispatch the request to a route or controller, as well as run any route specific middleware.
+	# Finishing up
+		Once the route or controller method returns a response, the response will travel back outward through the route's middleware, giving the application a chance to modify or examine the outgoing response.
 
 Artisan
 	is a command line interface included with laravel.
