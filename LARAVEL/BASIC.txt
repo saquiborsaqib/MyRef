@@ -1,4 +1,11 @@
 Laravel 
+	Web Application Framework
+	Provides an amazing development experience,
+	Provides Powerful features such as:
+		thorought dependency injection, 
+		an expressive database abstraction layer,
+		queues and scheduled jobs,
+		unit and integration testing, and more.
 	follows MVC (Model View Control) approach
 
 Download and Install "Composer"
@@ -9,6 +16,9 @@ Install Laravel
 Making new laravel project
 	go into directory(in cmd) where you want to make a project
 	then type : laravel new Project_name
+	
+Initial configuration
+	
 
 Artisan
 	is a command line interface included with laravel.
