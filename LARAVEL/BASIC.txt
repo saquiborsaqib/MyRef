@@ -151,3 +151,10 @@ Eloquent Models
 		php artisan make:model ModelName
 
 
+Auth. setup
+	Installation:
+		composer require laravel/ui
+		php artisan ui vue --auth
+		npm install
+		npm run dev
+
