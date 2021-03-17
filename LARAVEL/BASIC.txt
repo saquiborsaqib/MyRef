@@ -147,8 +147,82 @@ Creating Database in laravel project (from terminal)
 		migrate:status       Show the status of each migration
 
 Eloquent Models
-	create Model in artisan
+	an object-relational mapper (ORM) that makes it enjoyable to interact with your database. 
+	When using Eloquent, each database table has a corresponding "Model" that is used to interact with that table. 
+	Eloquent models allow you to insert, update, and delete records from the table as well.
+	
+	Models typically live in the app\Models directory and extend the Illuminate\Database\Eloquent\Model class.
+	
+	Generating Model Classes
 		php artisan make:model ModelName
+		
+		# Generate a model and a FlightMigration class...
+			php artisan make:model Flight --migration
+			
+		# Generate a model and a FlightFactory class...
+			php artisan make:model Flight --factory
+			php artisan make:model Flight -f
+
+		# Generate a model and a FlightSeeder class...
+			php artisan make:model Flight --seed
+			php artisan make:model Flight -s
+
+		# Generate a model and a FlightController class...
+			php artisan make:model Flight --controller
+			php artisan make:model Flight -c
+			
+		# Generate a model and a migration, factory, seeder, and controller...
+			php artisan make:model Flight -mfsc
+			
+	
+	class Flight extends Model
+	{
+	    /************#Table Names
+	    *By convention, the "snake case", plural name of the class will be used as the table name unless another name is explicitly specified.
+	    *Manually specify the model's table name by defining a table property on the model:**/
+	    	protected $table = 'my_flights';
+	    
+	    
+	    /************#Primary Keys
+	    *Eloquent will also assume that each model's corresponding database table has a primary key column named id. 
+	    *If necessary, you may define a protected $primaryKey property on your model to specify a different column that serves as your model's primary key:**/
+	    	protected $primaryKey = 'flight_id';
+	    
+	    /*In addition, Eloquent assumes that the primary key is an incrementing integer value, which means that Eloquent will automatically cast the primary key to an integer.
+	    *If you wish to use a non-incrementing or a non-numeric primary key you must define a public $incrementing property on your model that is set to false:**/
+	    	public $incrementing = false;
+	    
+	    /*If your model's primary key is not an integer, you should define a protected $keyType property on your model. This property should have a value of string:*/
+	    	protected $keyType = 'string';
+	    
+	    
+	    /************#Timestamps
+	    *By default, Eloquent expects created_at and updated_at columns to exist on your model's corresponding database table. Eloquent will automatically set these column's values when models are created or updated. If you do not want these columns to be automatically managed by Eloquent, you should define a $timestamps property on your model with a value of false:*/
+	    	public $timestamps = false;
+	    
+	    /*If you need to customize the format of your model's timestamps, set the $dateFormat property on your model. */
+	    	protected $dateFormat = 'U';
+	    
+	    /*If you need to customize the names of the columns used to store the timestamps, you may define CREATED_AT and UPDATED_AT constants on your model:*/
+	    	const CREATED_AT = 'creation_date';
+    		const UPDATED_AT = 'updated_date';
+	    
+	    
+	    /************#Database Connections
+	    *By default, all Eloquent models will use the default database connection that is configured for your application. If you would like to specify a different connection that should be used when interacting with a particular model, you should define a $connection property on the model:*/
+	    	protected $connection = 'sqlite';
+	    
+	    /************#Default Attribute Values
+	    *By default, a newly instantiated model instance will not contain any attribute values. If you would like to define the default values for some of your model's attributes, you may define an $attributes property on your model:*/
+	    	protected $attributes = [
+        		'delayed' => false,
+    		];
+	    
+	    
+	    
+	}
+
+		
 
 
 Auth. setup
