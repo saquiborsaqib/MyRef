@@ -217,10 +217,14 @@ Eloquent Models
 	    	protected $attributes = [
         		'delayed' => false,
     		];
-	    
-	    
-	    
 	}
+	
+	Retrieving Models
+		use App\Models\Flight;
+		
+		Flight::all()	//The model's all method will retrieve all of the records from the model's associated database table
+		$flights = Flight::where('active', 1)->orderBy('name')->take(10)->get();	//you may add additional constraints to queries and then invoke the get method to retrieve the results
+		
 
 		
 
