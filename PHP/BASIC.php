@@ -181,9 +181,18 @@
 
       /*Constants in Class*/
       const PI=3.141;
-      //constant in the class can only be accesses by preciding 'self::' keyword
+	   
+      /*Statics in Class*/
+      public static DrinkingAge=21;
+	public static function setDrinkingAge($x)
+	{
+		//code here
+	}
+	    
+      //constants and statics in the class can only be accesses by preciding 'self::' keyword
       //and outside class it can only be acessed by preceiding ClassName::
-
+		    
+	    
       /*Constructor*/
       public function __construct(argument)
       {
@@ -197,6 +206,17 @@
         return null;
       }
     }
+/*---------------------------------------------------------------------------------------*/
+/* Load Class Automaticlly in OOP*/
+	spl_autoload_register(function($className){
+		$path = "etc/etc/".$className.".extension";
+		if(!file_exists($path)){
+			return false;
+		}
+		include_once($path);
+	});
+
+
 /*---------------------------------------------------------------------------------------*/
 
 		/* OPERATORS*/
