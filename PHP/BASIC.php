@@ -206,6 +206,13 @@
         return null;
       }
     }
+
+    class Another extends ClassName{
+    	public function __construct(argument)
+      	{
+        	parent::PI;
+      	}
+    }
 /*---------------------------------------------------------------------------------------*/
 /* Load Class Automaticlly in OOP*/
 	spl_autoload_register(function($className){
