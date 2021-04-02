@@ -18,3 +18,13 @@ Console I/O
     
 Convert String 
   strconv.ParseInt("String",Base,Size)
+  
+Operators
+  (Operator dont work on two different type of data in Go)
+  Arithmetic + - / * % 
+  Comparison < > <= >= != ==
+  Condition ! || &&
+    
+Type Convesion
+  DataType(var)
+  int()
