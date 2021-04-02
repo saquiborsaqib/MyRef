@@ -28,3 +28,27 @@ Operators
 Type Convesion
   DataType(var)
   int()
+
+Conditional Statements
+  if condition {
+  
+  }else if condition {
+  
+  }else{
+  
+  }
+  
+Itratative statements
+  for initializer; condition; updation{
+  
+  }
+  
+switch statement
+  switch <choice>{
+    case arg:
+      //statement
+    case arg:
+      //statement
+    default:
+      //statement
+  }
