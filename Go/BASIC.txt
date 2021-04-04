@@ -52,3 +52,8 @@ switch statement
     default:
       //statement
   }
+  
+Arrays
+  1d
+    var arr_name [size] DataType
+    arr_name := [size] datatype{elements,elements,...}
