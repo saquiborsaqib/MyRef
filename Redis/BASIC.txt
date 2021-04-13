@@ -1,1 +1,60 @@
-sxkmdcfdcujim
+Redis
+
+  Redis is an open source, in memory data structure.
+  Redis can be used as a database or a cache and message broker
+  Redis is a NoSQL Key/Value store 
+  
+  Why use Redis:
+    • Very Flexible and Very Fast
+    • No Schemas and Column Names
+    • Rich Datatype Support
+    • Caching and Disk Persistance
+    
+  Redis supports different kinds of abstract data structures:
+  Redis is not a plain key-value store, it is actually a data structures server, supporting different kinds of values. What this means is that, while in traditional key-value stores you associate string keys to string values, in Redis the value is not limited to a simple string, but can also hold more complex data structures. 
+    • Strings
+    • Lists
+    • Sets
+    • Sorted Sets
+    • Hashes
+    • Bitmaps
+    • Hyperlogs
+    • Geospatial Indexes
+
+  Redis keys
+  Redis keys are binary safe, this means that you can use any binary sequence as a key, from a string like "foo" to the content of a JPEG file. The empty string is also a valid key.
+    • Very long keys are not a good idea.
+    • Very short keys are often not a good idea.
+    • Try to stick with a schema.
+    • The maximum allowed key size is 512 MB.
+
+  Strings
+    The Redis String type is the simplest type of value you can associate with a Redis key.
+    Since Redis keys are strings, when we use the string type as a value too, we are mapping a string to another string.
+    Commands:
+      • SET key value [option: nx||xx] [ex time]
+        sets a value.  
+        SET performs an assignment, means SET will replace any existing value already stored into the key, in the case that the key already exists, even if the key is associated with a non-string value.
+        The SET command has interesting options, that are provided as additional arguments. For example, I may ask SET to fail if the key already exists, or the opposite, that it only succeed if the key already exists: nx, xx.
+      • GET key value 
+        get a value
+      • GETSET key value
+        (set a key-value and return old value if exists)
+      
+      • INCR key
+      • INCRBY key incrementValue
+      • DECR key
+      • DECRBY key decrementValue
+      
+      • MSET key1 value1 key2 value2 ....
+      • MGET key1 key2......
+      
+      • EXISTS key
+      • TYPE key
+      • DEL key
+      
+      • EXPIRE key time 
+      • PERSIST key (remove the expire date)
+      • TTL key (return the expire time)
+      
+      
