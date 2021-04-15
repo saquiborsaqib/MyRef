@@ -27,6 +27,12 @@ Redis
     • Very short keys are often not a good idea.
     • Try to stick with a schema.
     • The maximum allowed key size is 512 MB.
+    
+  Automatic creation and removal of keys
+    When we add an element to an aggregate data type, if the target key does not exist, an empty aggregate data type is created before adding the element.
+    When we remove elements from an aggregate data type, if the value remains empty, the key is automatically destroyed. The Stream data type is the only exception to this rule.
+    Calling a read-only command such as LLEN (which returns the length of the list), or a write command removing elements, with an empty key, always produces the same result as if the key is holding an empty aggregate type of the type the command expects to find.
+    However we can't perform operations against the wrong type if the key exists.
 
   Strings
     The Redis String type is the simplest type of value you can associate with a Redis key.
@@ -57,4 +63,31 @@ Redis
       • PERSIST key (remove the expire date)
       • TTL key (return the expire time)
       
+  Lists
+    Redis lists are implemented via Linked Lists.
+    List is just a sequence of ordered elements: 10,20,1,2,3 is a list.
+    Commands:
+      • LPUSH listName value
+        The LPUSH command adds a new element into a list, on the left (at the head)
+      • RPUSH listName value
+        The RPUSH command adds a new element into a list, on the right (at the tail)
+      • LRANGE startIndex endIndex
+        The LRANGE command extracts ranges of elements from lists
+      • LPOP listName
+      • RPOP listName
+      • LLEN listname
+      
+      Capped lists
+        • LTRIM listName startIndex endIndex
+          The LTRIM command is similar to LRANGE, but instead of displaying the specified range of elements it sets this range as the new list value. All the elements outside the given range are removed.
+      
+      Blocking operations on lists
+      • BLPOP
+      • BRPOP
+      • LMOVE
+      • BLMOVE
+      
+  Hashes
+    Hashes are handy to represent objects, actually the number of fields you can put inside a hash has no practical limits (other than available memory), so you can use hashes in many different ways inside your application.
+    Hashes, which are maps composed of fields associated with values. Both the field and the value are strings. 
       
