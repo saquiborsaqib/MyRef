@@ -90,4 +90,14 @@ Redis
   Hashes
     Hashes are handy to represent objects, actually the number of fields you can put inside a hash has no practical limits (other than available memory), so you can use hashes in many different ways inside your application.
     Hashes, which are maps composed of fields associated with values. Both the field and the value are strings. 
+    
+  Sets
+    Collections of unique, Unsorted string elements.
+    Redis Sets are unordered collections of strings. 
+    Sets are good for expressing relations between objects. For instance we can easily use sets in order to implement tags.
+    
+  Sorted Sets
+    Sorted sets are a data type which is similar to a mix between a Set and a Hash. 
+    
+      
       
