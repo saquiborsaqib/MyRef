@@ -55,11 +55,27 @@ switch statement
   
 Arrays
   1d
+    var [size]arr_name
     var arr_name = [size] DataType
     arr_name := [size] datatype{elements,elements,...}
     
   2d
     var arr_name = [row][col] datatype {{element,element,..}{element,element,..}...{}}
 
-Array functions:
-  len(array)
+  Array functions:
+    len(array)
+
+Slices
+  var []slice_name = arr_name[startIndex : endIndex]
+  
+  Slice functions:
+    len(slice_name)
+    cap(slice_name)
+    append(slice_name, element)
+    make(arr, size)
+    var []s = make([]int, size)
+
+Range
+  for i, element := range arr{
+     //Code
+  }
