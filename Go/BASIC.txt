@@ -55,5 +55,11 @@ switch statement
   
 Arrays
   1d
-    var arr_name [size] DataType
+    var arr_name = [size] DataType
     arr_name := [size] datatype{elements,elements,...}
+    
+  2d
+    var arr_name = [row][col] datatype {{element,element,..}{element,element,..}...{}}
+
+Array functions:
+  len(array)
