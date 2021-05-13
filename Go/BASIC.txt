@@ -68,14 +68,74 @@ Arrays
 Slices
   var []slice_name = arr_name[startIndex : endIndex]
   
+  //dynamic size array/slice
+  var []s = make([]int, size)
+  --------or---------
+  s := make([]int, size)
+  
   Slice functions:
     len(slice_name)
     cap(slice_name)
     append(slice_name, element)
-    make(arr, size)
-    var []s = make([]int, size)
 
 Range
   for i, element := range arr{
      //Code
   }
+
+Maps
+  Key Value Pairs | Un-Order | Faster then array
+  
+  var mp map[string]int = map[string]int{
+    "key" : value,
+    "key" : value,
+    ..,
+  }
+    ------or------
+  mp := map[string]int{
+    "key" : value,
+    "key" : value,
+    ..,
+  }
+    ------or------
+  mp := make(map[string]int)  //creating empty map
+  
+  Exist Key??
+    value, exist := mp["key"]
+  
+  Map Functions:
+    len(mp)
+    delete(mp,"key")
+    
+Functions
+  func functionName(parameter type, ...) (label returnType, ..) {
+  
+    defer statement //these statements run after when function return.
+    
+    //code
+    
+    return var, ..
+  }
+  
+  //pointer to the function
+    function := func(){
+    
+    }
+    
+  //call function with defining
+    func(){
+    
+    }()
+    
+  //passing function to the function
+  
+    func function1 ( temp func(int)int ) int {
+      x := temp(5)
+      return x
+    }
+    
+    function2 := func ( a int ) int {
+      return a*a
+    }
+    
+    function1( function2 )
