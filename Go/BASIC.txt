@@ -1,3 +1,8 @@
+Basic Go Commands
+  go run fileName.go
+  go build -o "filename"
+  go build
+
 Variables
   Implicit
     VariableName := Value
