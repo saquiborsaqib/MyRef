@@ -157,9 +157,11 @@ Pointers
   var ptr *dataType = &var
   
 Structure 
+
   Build Custom Types, GoLang dont have class, 
   
   type SName struct {
+    //state (fields)
     var dataType
     var2 dataType
   }
@@ -167,3 +169,17 @@ Structure
   var obj SName = SName{value, value}
   obj := SName{value, value}
   obj := SName{var:value, var2:value}
+
+  //Behaviour (Methods)
+    func (representer structName) methodName() returnType {
+      //code
+    }
+    
+  //Interface (Polymorphism)
+    type InterfaceName interface {
+      //............
+    }
+  
+  //Exported & Unexported; viewable & not viewable
+  //Inheritance (Embedded types)
+  //promotion
