@@ -139,3 +139,31 @@ Functions
     }
     
     function1( function2 )
+
+  //Returning function
+    
+    func returnFunc(x string) func() {
+      return func(){
+        fmt.Println(x)
+      }
+    }
+    
+    returnFunc("hello")()
+    ------or----------
+    z := returnFunc("hello")
+    z()
+    
+Pointers
+  var ptr *dataType = &var
+  
+Structure 
+  Build Custom Types, GoLang dont have class, 
+  
+  type SName struct {
+    var dataType
+    var2 dataType
+  }
+  
+  var obj SName = SName{value, value}
+  obj := SName{value, value}
+  obj := SName{var:value, var2:value}
