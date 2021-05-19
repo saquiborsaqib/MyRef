@@ -180,11 +180,15 @@ Structure
       //code
     }
     
-  //Interface (Polymorphism)
-    type InterfaceName interface {
-      //............
-    }
+Interface (Polymorphism)
+  type InterfaceName interface {
+    //............
+  }
   
-  //Exported & Unexported; viewable & not viewable
-  //Inheritance (Embedded types)
-  //promotion
+Exported & Unexported; viewable & not viewable
+Inheritance (Embedded types)
+promotion
+
+Redis
+  The open source community actively supports quite a few client libraries, including Redigo, Radix and go-redis/redis.
+  
