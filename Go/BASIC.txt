@@ -185,7 +185,11 @@ Interface (Polymorphism)
     //............
   }
   
-Exported & Unexported; viewable & not viewable
+Exported & Unexported / viewable & not viewable
+  In go, fields and variables that start with an Uppercase letter are "Exported", and are visible to other packages. 
+  Fields that start with a lowercase letter are "unexported", and are only visible inside their own package.
+
+
 Inheritance (Embedded types)
 promotion
 
