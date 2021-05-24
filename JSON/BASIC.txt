@@ -1,1 +1,49 @@
-sdg
+JSON
+  JSON stands for JavaScript Object Notation
+  JSON is a syntax for storing and exchanging data.
+  JSON is text, written with JavaScript object notation.
+  JSON is often used when data is sent from a server to a web page
+  JSON is "self-describing" and easy to understand
+  
+Exchanging Data
+  When exchanging data between a browser and a server, the data can only be text.
+  JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server.
+  We can also convert any JSON received from the server into JavaScript objects.
+  This way we can work with the data as JavaScript objects, with no complicated parsing and translations.
+  
+JSON Syntax Rules
+  Data is in name/value pairs
+  Data is separated by commas
+  Curly braces hold objects
+  Square brackets hold arrays
+  
+JSON Data
+  "Name":"Value","Name2":"Value2"
+  
+JSON Object
+  JSON objects are surrounded by curly braces {}.
+  JSON objects are written in key/value pairs.
+  Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).
+  Keys and values are separated by a colon.
+  Each key/value pair is separated by a comma.
+
+    {"Name":"Value"}
+  
+JSON Array
+  [
+    {"Name":"Value","Name2":"Value2"},
+    {"Name":"Value","Name2":"Value2"}
+  ]
+  
+JSON Files
+  The file type for JSON files is ".json"
+  The MIME type for JSON text is "application/json"
+  
+Sending Data
+  In JS
+    text = JSON.stringify(Obj)
+    
+Receving Data
+  In JS
+    Obj = JSON.parse(text)
+    
