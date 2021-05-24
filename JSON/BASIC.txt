@@ -45,3 +45,5 @@ In JS
   JSON Text format into JS Object
     Obj = JSON.parse(text)
     
+In PHP
+  refer  -  https://www.php.net/manual/en/book.json.php
