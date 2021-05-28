@@ -19,4 +19,62 @@ Start
     Run the React Application : move to your application directory > npm start
       
   
-  Hearts of all react app are component - A piece of the UI  
+React Components
+  Hearts of all react app are component - A piece of the UI
+  Components are like functions that return HTML elements.
+  Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function.
+  Components come in two types: 
+    Class components
+    Function components
+  
+Function Component
+  A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions
+  function Car() {
+    return <h2>Hi, I am also a Car!</h2>;
+  }
+
+Class Component
+  class ComponentName extends React.Component {       //The component's name must start with an upper case letter nd must extends React.Component.
+    
+    //***************render method
+    //The component requires a render() method, this method returns HTML.
+    render() { 
+      return <h2>Hello World</h2>;
+    };
+    
+    //***************Component Constructor
+    //The constructor function is where you initiate the component's properties.
+    //In React, component properties should be kept in an object called state.
+    constructor() {
+      super();
+      this.state = {color: "red"};
+    };
+    
+    //**************Components in Components
+    //We can refer to components inside other components, like : creating object of some other class. 
+    //ex: <Vehicle/> 
+  }
+  
+  //***************Components in Files
+  //React is all about re-using code, and it can be smart to insert some of your components in separate files.
+  
+Props
+  Props are arguments passed into React components.
+  Props are passed to components via HTML attributes.
+  React Props are like function arguments in JavaScript and attributes in HTML.
+  
+  <Car brand="Ford" />
+    here,
+      Car is Component Name
+      Brand is a HTML attribute, this will pass to the component as props name 
+        In Component Class this will access like:
+        this.props.brand;
+      Ford is props value
+
+State
+  React components has a built-in state object.
+  The state object is where you store property values that belongs to the component.
+  When the state object changes, the component re-renders.
+  The state object is initialized in the constructor
+  Using the state Object : this.state.propertyname
+  Changing the state Object : this.setState()
