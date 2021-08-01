@@ -113,8 +113,11 @@ State
 
 
 //////////////////////////////////////////////////////////////////////////////////
+Hooks
+  Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+
+//////////////////////////////////////////////////////////////////////////////////
 AJAX 
   You can use any AJAX library you like with React.
   You should populate data with AJAX calls in the componentDidMount lifecycle method. This is so you can use setState to update your component when the data is retrieved.
-  
-  
