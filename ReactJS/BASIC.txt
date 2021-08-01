@@ -18,7 +18,8 @@ Start
     Create a React application : npx create-react-app myfirstreact
     Run the React Application : move to your application directory > npm start
       
-  
+ 
+//////////////////////////////////////////////////////////////////////////////////
 React Components
   Hearts of all react app are component - A piece of the UI
   Components are like functions that return HTML elements.
@@ -27,13 +28,40 @@ React Components
     Class components
     Function components
   
+//////////////////////////////////////////////////////////////////////////////////
 Function Component
   A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions
   function Car() {
     return <h2>Hi, I am also a Car!</h2>;
   }
+  Working of Functional Components: 
+    props  ------>  ||FUNCTIONAL COMPONENT||  ---return--->  ||React Element / JSX||
+  cons:
+    - No Side effects
+    - No state
 
+
+//////////////////////////////////////////////////////////////////////////////////
 Class Component
+
+  Working of Class Components:
+    ||CLASS COMPONENT||  ---react creates--->  ||INSTANCE||  ---render()--->  ||React Element / JSX||
+  
+  Life Cycle of Class Components:
+  |
+  |--->  Mounting
+  |      |
+  |      |--->  constructor()  --->  render() --->  comnonentDidMount()
+  |
+  |--->  Updating
+  |      |
+  |      |--->  render() --->  componentDidUpdate()
+  |
+  |--->  Unmounting
+         |
+         |--->  componentWillUnmount()
+  
+  
   class ComponentName extends React.Component {       //The component's name must start with an upper case letter nd must extends React.Component.
     
     //***************render method
@@ -57,7 +85,9 @@ Class Component
   
   //***************Components in Files
   //React is all about re-using code, and it can be smart to insert some of your components in separate files.
-  
+ 
+ 
+//////////////////////////////////////////////////////////////////////////////////
 Props
   Props are arguments passed into React components.
   Props are passed to components via HTML attributes.
@@ -71,6 +101,8 @@ Props
         this.props.brand;
       Ford is props value
 
+
+//////////////////////////////////////////////////////////////////////////////////
 State
   React components has a built-in state object.
   The state object is where you store property values that belongs to the component.
@@ -80,6 +112,7 @@ State
   Changing the state Object : this.setState()
 
 
+//////////////////////////////////////////////////////////////////////////////////
 AJAX 
   You can use any AJAX library you like with React.
   You should populate data with AJAX calls in the componentDidMount lifecycle method. This is so you can use setState to update your component when the data is retrieved.
