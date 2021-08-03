@@ -44,3 +44,18 @@ React only changes what needs to be changed!
 * Components come in two types: 
     * Class components
     * Function components
+
+---
+
+## Function Component
+
+A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions
+
+```
+function Car(props) {
+  return <h2>Hi {props.name}, I am also a Car!</h2>;
+}
+```
+
+Working of Functional Components:
+  
