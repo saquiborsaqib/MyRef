@@ -20,6 +20,16 @@ Start
       
  
 //////////////////////////////////////////////////////////////////////////////////
+JSX JavaScript XML
+  Extention to the JavaScript Language syntax.
+  Write XML-like code for elements and components.
+  JSX tags have name, attributes, and chuldren.
+  JSX is not a necessity to write React applications.
+  JSX makes your react code simpler and elegant.
+  JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
+
+
+//////////////////////////////////////////////////////////////////////////////////
 React Components
   Hearts of all react app are component - A piece of the UI
   Components are like functions that return HTML elements.
@@ -31,8 +41,8 @@ React Components
 //////////////////////////////////////////////////////////////////////////////////
 Function Component
   A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions
-  function Car() {
-    return <h2>Hi, I am also a Car!</h2>;
+  function Car(props) {
+    return <h2>Hi {props.name}, I am also a Car!</h2>;
   }
   Working of Functional Components: 
     props  ------>  ||FUNCTIONAL COMPONENT||  ---return--->  ||React Element / JSX||
@@ -51,15 +61,19 @@ Class Component
   |
   |--->  Mounting
   |      |
-  |      |--->  constructor()  --->  render() --->  comnonentDidMount()
+  |      |--->  constructor()  --->  static getDrivedStateFromProps()  --->  render() --->  comnonentDidMount()
   |
   |--->  Updating
   |      |
-  |      |--->  render() --->  componentDidUpdate()
+  |      |--->  static getDrivedStateFromProps()  --->  shouldComponentUpdate()  --->  render() --->  getSnapshotBeforeUpdate()  --->  componentDidUpdate()
   |
   |--->  Unmounting
+  |      |
+  |      |--->  componentWillUnmount()
+  |
+  |--->Error Handling
          |
-         |--->  componentWillUnmount()
+         |---> static getDerivedStateFromError()  --->  componentDidCatch()
   
   
   class ComponentName extends React.Component {       //The component's name must start with an upper case letter nd must extends React.Component.
@@ -92,6 +106,9 @@ Props
   Props are arguments passed into React components.
   Props are passed to components via HTML attributes.
   React Props are like function arguments in JavaScript and attributes in HTML.
+  props are immutable (it cant be change)
+  
+  ********* props.children  : gives the inner html of component. *********
   
   <Car brand="Ford" />
     here,
@@ -105,11 +122,72 @@ Props
 //////////////////////////////////////////////////////////////////////////////////
 State
   React components has a built-in state object.
+  States are like Varibles declared in the function body.
   The state object is where you store property values that belongs to the component.
   When the state object changes, the component re-renders.
   The state object is initialized in the constructor
   Using the state Object : this.state.propertyname
-  Changing the state Object : this.setState()
+  
+  * setState(stateObject, callBackFunction)
+    Changing the state Object : this.setState()
+      Dont change the state object directly, always use setState method to change an state value.
+      If you change state object directly, react will not render the component and u will not see any changes in ui.
+      
+    Callback Function: If u want to execute some code after the state change then write the code into call back function.
+      this.setState({
+        A:this.state.A+1
+      }, ()=>{
+        console.log(this.state.A);
+      });
+      
+    When you ahve to update state based on the previous state value, pass in a function as an argument insted of the regular object.
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Conditional Rendering
+  1. if-else Statement: cant write if-else inside jsx, u can put if-else in render method and return inside if else condition.
+  2. Element Variables
+  3. Ternary conditional operator (?:)
+  4. Short circuit operator (&&)
+
+
+//////////////////////////////////////////////////////////////////////////////////
+List Rendering
+  Using map method
+  
+  When to use Index as a key?
+    The items in your list do not have a unique id.
+    The list is a static and will not change.
+    The list will never be ordered or filtered.
+    
+    
+//////////////////////////////////////////////////////////////////////////////////
+Styling React Components
+  1. CSS StyleSheets
+  2. Inline Styling
+  3. CSS Modules
+  4. CSS in JS Libraries
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Fragments
+  A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+  <React.Fragment>
+    <p></p>
+    <p></p>
+  </React.Fragment>
+  
+  You can use <></> the same way you’d use any other element except that it doesn’t support keys or attributes.
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Pure Components
+If the previous value of state or props and the new value of state or props is the same, the component will not re-render itself. Since Pure Components restricts the re-rendering when there is no use of re-rendering of the component. Pure Components are Class Components which extends React.PureComponent. 
+
+
+//////////////////////////////////////////////////////////////////////////////////
+memo
+React.memo is a higher order component. If your component renders the same result given the same props, you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.
 
 
 //////////////////////////////////////////////////////////////////////////////////
