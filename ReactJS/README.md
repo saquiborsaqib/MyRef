@@ -127,7 +127,7 @@ Life Cycle of Class Components:
 <Car brand="Ford" />
 ```
   here,
-    * Car is Component Name
-    * Brand is a HTML attribute, this will pass to the component as props name
-    * Ford is props value 
-    * In Component Class this will access like: `this.props.brand;`
+  * Car is Component Name
+  * Brand is a HTML attribute, this will pass to the component as props name
+  * Ford is props value 
+  * In Component Class this will access like: `this.props.brand;`
