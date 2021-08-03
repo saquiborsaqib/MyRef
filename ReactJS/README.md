@@ -70,6 +70,7 @@ Cons of Functional  Components :
 Working of Class Components:  `||CLASS COMPONENT||  ---react creates--->  ||INSTANCE||  ---render()--->  ||React Element / JSX||`
 
 Life Cycle of Class Components:
+```
   |
   |--->  Mounting
   |      |
@@ -86,3 +87,4 @@ Life Cycle of Class Components:
   |--->Error Handling
          |
          |---> static getDerivedStateFromError()  --->  componentDidCatch()
+```
