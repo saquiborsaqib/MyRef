@@ -1,0 +1,50 @@
+.signform{
+    text-align: center;
+}
+.signform>*{
+    margin: 10px auto;
+    width: 60%;
+}
+.signform input{
+    border: .5px solid;
+    border-bottom:3px solid;
+    border-radius: 10px;
+    border-color: rgb(109, 108, 108);
+}
+.signform button{
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    background-color: rgb(104, 218, 233);
+    border-radius: 25px;
+}
+.signform h3{
+    padding-bottom: 30px;
+}
+.signform::after{
+    content: "";
+    height:5px;
+    width: 180px;
+    color:black;
+
+}
+.about {
+    background-color: rgb(104, 218, 233);
+    color:white;
+    padding: 70px;
+}
+.text-divider {
+    display: flex;
+    align-items: center;
+}
+.text-divider::before,
+.text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: silver;
+    flex-grow: 1;
+}
+.social>*{
+    font-size: 25px;
+    margin: 5px 10px;
+}
