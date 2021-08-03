@@ -58,4 +58,4 @@ function Car(props) {
 ```
 
 Working of Functional Components:
-  
+  props  -->  FUNCTIONAL COMPONENT  --return-->  React Element / JSX
