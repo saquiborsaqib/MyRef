@@ -22,3 +22,17 @@ React only changes what needs to be changed!
   * Install create-react-app : npm install -g create-react-app
   * Create a React application : npx create-react-app myfirstreact
   * Run the React Application : move to your application directory > npm start
+
+---
+
+## JSX JavaScript XML
+
+* Extention to the JavaScript Language syntax.
+* Write XML-like code for elements and components.
+* JSX tags have name, attributes, and chuldren.
+* JSX is not a necessity to write React applications.
+* JSX makes your react code simpler and elegant.
+* JSX ultimately transpiles to pure JavaScript which is understood by the browsers.
+
+---
+
