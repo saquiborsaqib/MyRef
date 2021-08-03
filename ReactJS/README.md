@@ -59,6 +59,30 @@ function Car(props) {
 
 Working of Functional Components:  `props  ------>  ||FUNCTIONAL COMPONENT||  ---return--->  ||React Element / JSX||`
 
-cons:  
+Cons of Functional  Components :   
 * No Side effects
 * No state
+
+---
+
+## Class Component
+
+Working of Class Components:  `||CLASS COMPONENT||  ---react creates--->  ||INSTANCE||  ---render()--->  ||React Element / JSX||`
+
+Life Cycle of Class Components:
+  |
+  |--->  Mounting
+  |      |
+  |      |--->  constructor()  --->  static getDrivedStateFromProps()  --->  render() --->  comnonentDidMount()
+  |
+  |--->  Updating
+  |      |
+  |      |--->  static getDrivedStateFromProps()  --->  shouldComponentUpdate()  --->  render() --->  getSnapshotBeforeUpdate()  --->  componentDidUpdate()
+  |
+  |--->  Unmounting
+  |      |
+  |      |--->  componentWillUnmount()
+  |
+  |--->Error Handling
+         |
+         |---> static getDerivedStateFromError()  --->  componentDidCatch()
