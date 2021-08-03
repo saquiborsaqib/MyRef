@@ -57,5 +57,8 @@ function Car(props) {
 }
 ```
 
-Working of Functional Components:
-    `props  ------>  ||FUNCTIONAL COMPONENT||  ---return--->  ||React Element / JSX||`
+Working of Functional Components:  `props  ------>  ||FUNCTIONAL COMPONENT||  ---return--->  ||React Element / JSX||`
+
+cons:  
+* No Side effects
+* No state
