@@ -154,6 +154,7 @@ Changing the state Object : `this.setState()`
   * If you change state object directly, react will not render the component and u will not see any changes in ui.
  
 <br>
+
 * Callback Function: If u want to execute some code after the state change then write the code into call back function.
   ```js
   this.setState({
