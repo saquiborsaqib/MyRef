@@ -143,23 +143,26 @@ Life Cycle of Class Components:
 * The state object is initialized in the constructor
 
 <br>
+
 * Using the state Object : this.state.propertyname
 
 <br>
+
 * `setState(stateObject, callBackFunction)`
 Changing the state Object : `this.setState()`
   * Dont change the state object directly, always use setState method to change an state value.
   * If you change state object directly, react will not render the component and u will not see any changes in ui.
  
- <br>
- * Callback Function: If u want to execute some code after the state change then write the code into call back function.
+<br>
+* Callback Function: If u want to execute some code after the state change then write the code into call back function.
   ```js
   this.setState({
     A:this.state.A+1
   }, ()=>{
     console.log(this.state.A);
   });
-``` 
+  ``` 
 
 <br>
+
 * When you ahve to update state based on the previous state value, pass in a function as an argument insted of the regular object.
