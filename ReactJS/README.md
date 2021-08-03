@@ -167,3 +167,48 @@ Changing the state Object : `this.setState()`
 <br>
 
 * When you ahve to update state based on the previous state value, pass in a function as an argument insted of the regular object.
+
+---
+
+## Conditional Rendering
+
+1. if-else Statement: cant write if-else inside jsx, u can put if-else in render method and return inside if else condition.
+2. Element Variables
+3. Ternary conditional operator (?:)
+4. Short circuit operator (&&)
+
+---
+
+## List Rendering
+
+Using map method
+
+<br>
+
+When to use Index as a key?
+* The items in your list do not have a unique id.
+* The list is a static and will not change.
+* The list will never be ordered or filtered.
+
+---
+
+## Styling React Components
+1. CSS StyleSheets
+2. Inline Styling
+3. CSS Modules
+4. CSS in JS Libraries
+
+---
+
+## Fragments
+
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+
+```html
+  <React.Fragment>
+    <p></p>
+    <p></p>
+  </React.Fragment>
+```
+
+You can use <></> the same way you’d use any other element except that it doesn’t support keys or attributes.
