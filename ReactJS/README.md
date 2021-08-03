@@ -36,3 +36,11 @@ React only changes what needs to be changed!
 
 ---
 
+## React Components
+
+* Hearts of all react app are component - A piece of the UI
+* Components are like functions that return HTML elements.
+* Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML via a render() function.
+* Components come in two types: 
+    * Class components
+    * Function components
