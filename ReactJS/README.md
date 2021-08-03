@@ -51,7 +51,7 @@ React only changes what needs to be changed!
 
 A Function component also returns HTML, and behaves pretty much the same way as a Class component, but Class components have some additions
 
-```
+```js
 function Car(props) {
   return <h2>Hi {props.name}, I am also a Car!</h2>;
 }
@@ -89,7 +89,7 @@ Life Cycle of Class Components:
          |---> static getDerivedStateFromError()  --->  componentDidCatch()
 ```
 
-```
+```js
  class ComponentName extends React.Component {       //The component's name must start with an upper case letter nd must extends React.Component.
     
     //***************render method
