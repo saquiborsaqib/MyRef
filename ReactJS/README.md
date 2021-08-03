@@ -1,2 +1,2 @@
 #React JS Notes:
-* React JS [](BASIC)
+* [React JS](BASIC.md#reactjs)
