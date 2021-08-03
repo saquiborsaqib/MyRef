@@ -120,15 +120,14 @@ Life Cycle of Class Components:
 * Props are passed to components via HTML attributes.
 * React Props are like function arguments in JavaScript and attributes in HTML.
 * props are immutable (it cant be change)
-* props.children:
-  * gives the inner html of component. *********
+* `props.children` : gives the inner html of component.
   
   
 ```
 <Car brand="Ford" />
 ```
-here,
-* Car is Component Name
-* Brand is a HTML attribute, this will pass to the component as props name
-* Ford is props value 
-* In Component Class this will access like: `this.props.brand;`
+    here,
+    * Car is Component Name
+    * Brand is a HTML attribute, this will pass to the component as props name
+    * Ford is props value 
+    * In Component Class this will access like: `this.props.brand;`
