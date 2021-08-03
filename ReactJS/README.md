@@ -88,3 +88,26 @@ Life Cycle of Class Components:
          |
          |---> static getDerivedStateFromError()  --->  componentDidCatch()
 ```
+
+```
+ class ComponentName extends React.Component {       //The component's name must start with an upper case letter nd must extends React.Component.
+    
+    //***************render method
+    //The component requires a render() method, this method returns HTML.
+    render() { 
+      return <h2>Hello World</h2>;
+    };
+    
+    //***************Component Constructor
+    //The constructor function is where you initiate the component's properties.
+    //In React, component properties should be kept in an object called state.
+    constructor() {
+      super();
+      this.state = {color: "red"};
+    };
+    
+    //**************Components in Components
+    //We can refer to components inside other components, like : creating object of some other class. 
+    //ex: <Vehicle/> 
+  }
+```
