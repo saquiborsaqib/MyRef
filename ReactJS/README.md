@@ -225,3 +225,47 @@ React.memo is a higher order component. If your component renders the same resul
 
 ---
 
+## Refs
+
+Refs provide a way to access DOM nodes or React elements created in the render method.
+
+Creating Refs:
+```js
+  class MyComponent extends React.Component {
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef();
+    }
+    render() {
+      return <div ref={this.myRef} />;
+    }
+  }
+```
+
+Accessing Refs: `const node = this.myRef.current;`
+
+---
+
+## Portals
+
+Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+
+`ReactDOM.createPortal(child, container)`
+* The first argument (child) is any renderable React child, such as an element, string, or fragment. 
+* The second argument (container) is a DOM element.
+
+```js
+render() {
+  // React does *not* create a new div. It renders the children into `domNode`.
+  // `domNode` is any valid DOM node, regardless of its location in the DOM.
+  return ReactDOM.createPortal(
+    this.props.children,
+    domNode
+  );
+}
+```
+
+---
+
+## Error Boundaries
+
