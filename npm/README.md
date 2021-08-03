@@ -29,3 +29,7 @@ npm is the package manager for Java Script
 * `npm config delete init-<name>`
 
 ---
+
+```
+print();
+```
