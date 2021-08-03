@@ -307,3 +307,14 @@ class ErrorBoundary extends React.Component {
   <MyWidget />
 </ErrorBoundary>
 ```
+
+---
+
+## AJAX in ReactJS
+
+* You can use any AJAX library you like with React.
+* You should populate data with AJAX calls in the componentDidMount lifecycle method. This is so you can use setState to update your component when the data is retrieved.
+
+---
+
+---
