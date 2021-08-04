@@ -351,6 +351,12 @@ export default higherOrderComponent
 
 ---
 
+## Context
+
+
+
+---
+
 ## AJAX in ReactJS
 
 * You can use any AJAX library you like with React.
