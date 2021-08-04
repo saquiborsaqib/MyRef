@@ -22,7 +22,7 @@
 * [Error Boundaries](BASIC.md#error-boundaries)
 * [Higher Order Components (HOC)](BASIC.md#higher-order-components)
 * [Render Props](BASIC.md#render-props)
-* [Context]((BASIC.md#context)
+* [Context](BASIC.md#context)
 * [AJAX in ReactJS](BASIC.md#ajax-in-reactjs)
 
 ### Hooks : 
