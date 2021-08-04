@@ -45,3 +45,24 @@ useState is a Hook that lets you add React state to function components.
 * useState returns a pair of values:  
   1. the current state and
   2. a function that updates it.
+
+#### useState with previous state
+```js 
+setCount(prevCount => prevCount + 1)
+```
+
+#### useState with object
+```js 
+const [name, setName] = useState({firstName: '', lastName: ''});
+
+//update the object by setName
+setName({...name, lastName: 'xyz'});
+```
+
+#### useState with array
+```js 
+const [items, setItem] = useState([]);
+
+//update the array by setter
+setItem([...items, 'nextItem']);
+```
