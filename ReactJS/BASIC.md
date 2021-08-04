@@ -345,7 +345,7 @@ export default higherOrderComponent
 
 ---
 
-##Render Props
+## Render Props
 
 
 
