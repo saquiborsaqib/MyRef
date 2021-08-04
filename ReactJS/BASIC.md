@@ -310,6 +310,47 @@ class ErrorBoundary extends React.Component {
 
 ---
 
+## Higher Order Components
+
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
+
+Concretely, a higher-order component is a function that takes a component and returns a new component.
+
+```js
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+```
+
+```js
+const higherOrderComponent = WrappedComponent => {
+  constructor(props){
+    super(props);
+    this.state = {
+      //states
+    }
+  }
+  
+  method = () => {
+    //code
+  }
+  
+  render(){
+    return(
+      <WrappedComponent {...this.props} />
+    )
+  }
+}
+
+export default higherOrderComponent
+```
+
+---
+
+##Render Props
+
+
+
+---
+
 ## AJAX in ReactJS
 
 * You can use any AJAX library you like with React.
