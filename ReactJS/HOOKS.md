@@ -34,3 +34,14 @@ function Example(props) {
 ---
 
 ## useState Hook
+
+useState is a Hook that lets you add React state to function components.
+
+```js
+ const [count, setCount] = useState(0);
+ ```
+* useState declares a “state variable”.
+* Argument to the useState() Hook is the initial state.
+* useState returns a pair of values:  
+  1. the current state and
+  2. a function that updates it.
