@@ -16,4 +16,21 @@ Hooks are JavaScript functions, but they impose two additional rules:
 1. Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions.
 2. Only call Hooks from React function components. Don’t call Hooks from regular JavaScript functions.
 
+#### Hooks and Function Components
+```js
+const Example = (props) => {
+  // You can use Hooks here!
+  return <div />;
+}
+```
+or
+```js
+function Example(props) {
+  // You can use Hooks here!
+  return <div />;
+}
+```
+
 ---
+
+## useState Hook
