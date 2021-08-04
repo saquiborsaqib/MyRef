@@ -14,15 +14,16 @@
 * [Styling React Components](BASIC.md#styling-react-components)
 * [Fragments](BASIC.md#fragments)
 * [Pure Components & Memo](BASIC.md#pure-components)
-* [AJAX in ReactJS](BASIC.md#ajax-in-reactjs)
 
 ### Advance : 
 
 * [Refs](BASIC.md#refs)
 * [Portals](BASIC.md#portals)
 * [Error Boundaries](BASIC.md#error-boundaries)
-* []()
-* []()
+* [Higher Order Components (HOC)](BASIC.md#higher-order-components)
+* [Render Props](BASIC.md#render-props)
+* [Context]((BASIC.md#context)
+* [AJAX in ReactJS](BASIC.md#ajax-in-reactjs)
 
 ### Hooks : 
 * []()
