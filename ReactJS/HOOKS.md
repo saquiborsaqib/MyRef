@@ -66,3 +66,60 @@ const [items, setItem] = useState([]);
 //update the array by setter
 setItem([...items, 'nextItem']);
 ```
+
+---
+
+## useEffect Hook
+
+The Effect Hook lets you perform side effects in function components.
+
+```js
+useEffect(()=>{
+  //code 
+});
+```
+
+#### Conditionally Run Effects
+
+```js
+[dependency, setDependency] = useState(0);
+
+useEffect(()=>{
+  //code 
+},[dependency]);
+```
+
+#### Run Effects Only Once
+
+```js
+useEffect(()=>{
+  //code 
+},[]);
+```
+
+#### useEffect with cleanup
+
+```js
+useEffect(()=>{
+  //code 
+  
+  return () => {
+    //cleanup code 
+  }
+},[]);
+```
+
+---
+
+## Context with useContext Hook
+
+**Create the context** and **Provide a context value** is same as the class components. see [Context](BASIC.md#context) .
+
+#### Consume the context value with useContext
+
+```js
+const user = useContext(UserContext)
+```
+
+---
+
