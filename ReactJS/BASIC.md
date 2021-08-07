@@ -356,9 +356,31 @@ The term “render prop” refers to a technique for sharing code between React 
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
 Context
-1. Create the context
-2. Provide a context value
-3. Consume the context value
+#### Create the context
+
+```js
+export const UserContext = React.createContext()
+```
+  
+#### Provide a context value
+
+```js
+<UserContext.Provider value={"value"}>
+  <ChildCompunent/>
+</UserContext.Provider>
+```
+
+#### Consume the context value
+
+```js
+<UserContext.Consumer>
+  {
+    user => {
+      return <div>{user}</div>
+    }
+  }
+</UserContext.Consumer>
+```
 
 ---
 
