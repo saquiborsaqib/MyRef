@@ -355,7 +355,6 @@ The term “render prop” refers to a technique for sharing code between React 
 
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
-Context
 #### Create the context
 
 ```js
