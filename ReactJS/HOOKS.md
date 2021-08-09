@@ -123,3 +123,9 @@ const user = useContext(UserContext)
 
 ---
 
+## useReducer 
+
+* useReducer is a hook that is used for state management.
+* it is alternative to useState.
+* useState is built using useReducer.
+
