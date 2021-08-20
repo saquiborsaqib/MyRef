@@ -1,7 +1,7 @@
 # Linux (Ubuntu)
 ---
 
-### `pwd` : Present Working Directory __
+### `pwd` : Present Working Directory /
  
 ### `ls` : List
 
