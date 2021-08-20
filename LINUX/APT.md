@@ -6,5 +6,20 @@ is a free-software user interface that works with core libraries to handle the i
 
 #### Install a Package
 ```
-sudo apt install nmap
+sudo apt install package
+```
+
+#### Remove a Package
+```
+sudo apt remove package
+```
+
+#### Update the Package Index
+```
+sudo apt update
+```
+
+#### Upgrade Packages
+```
+sudo apt upgrade
 ```
