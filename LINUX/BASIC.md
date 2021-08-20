@@ -1,17 +1,17 @@
 # Linux (Ubuntu)
 ---
 
-### `pwd` : Present Working Directory /
+### `pwd` : Present Working Directory <br/><br/>
  
-### `ls` : List
+### `ls` : List <br/><br/>
 
 ### `cd` : Change Directory
 
-  `cd /`, `cd ~`, `cd ./path/to/destination/from/current/directory`, `cd /path/to/destination/from/root`, `cd ..`
+  `cd /`, `cd ~`, `cd ./path/to/destination/from/current/directory`, `cd /path/to/destination/from/root`, `cd ..`<br/><br/>
 
 ### `mkdir` : Make Directory
 
-  `mkdir directoryName`, `mkdir inside/some/other/directory`, `mkdir directory1 directory2 directory3`, `mkdir -p nested/directories`
+  `mkdir directoryName`, `mkdir inside/some/other/directory`, `mkdir directory1 directory2 directory3`, `mkdir -p nested/directories` <br/><br/>
 
 ### `cat` : concatenate
 
@@ -21,5 +21,5 @@
   
   If you pass more than one filename to cat it will output each of them, one after the other, as a single block of text:
   
-  `cat file1.txt file2.txt file3.txt`
+  `cat file1.txt file2.txt file3.txt`<br/><br/>
 
