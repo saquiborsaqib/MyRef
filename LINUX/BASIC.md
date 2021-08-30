@@ -40,3 +40,11 @@
 ### `rm`, `rmdir`, `rm -r` : Remove
 
 `rm file.txt`, `rmdir folder`, `rm -r folder`<br/><br/>
+
+### locate 
+
+### find 
+
+### which
+
+### grep 
