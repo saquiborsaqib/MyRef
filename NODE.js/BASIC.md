@@ -13,3 +13,10 @@
 * Popular in the Industry
 * Same language on the front and back end (JS)
 
+## Installing NODE.JS
+
+``` sudo apt install node ```
+
+## Running NODE Program
+
+``` node file-name.js ```
