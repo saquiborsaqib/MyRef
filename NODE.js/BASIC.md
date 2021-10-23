@@ -36,4 +36,5 @@
 
   ```js
   var logger = require('path/to/the/file/nd/name'); 
+  const logger = require('path/to/the/file/nd/name'); 
   ```
