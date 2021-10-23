@@ -20,3 +20,12 @@
 ## Running NODE Program
 
 ``` node file-name.js ```
+
+## Node Module System
+
+* Every file in the node is considered a module, They are private, the functions and the varibles defined in that module is scope to that module.
+* Every node application should have main module.
+
+### Exporting Members of Module 
+
+``` module.exports.member = member;
