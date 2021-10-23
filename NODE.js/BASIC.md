@@ -28,7 +28,9 @@
 
 * ### Exporting Members of Module 
 
-  ```js  module.exports.member = member;```
+  ```js
+  module.exports.member = member;
+  ```
   
 * ### Loading a Module
 
