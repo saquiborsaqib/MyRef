@@ -34,4 +34,6 @@
   
 * ### Loading a Module
 
-  ```js require(); ```
+  ```js
+  var logger = require('path/to/the/file/nd/name'); 
+  ```
