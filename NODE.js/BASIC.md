@@ -26,6 +26,6 @@
 * Every file in the node is considered a module, They are private, the functions and the varibles defined in that module is scope to that module.
 * Every node application should have main module.
 
-* #### Exporting Members of Module 
+* ### Exporting Members of Module 
 
-``` module.exports.member = member;```
+  ``` module.exports.member = member;```
