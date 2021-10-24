@@ -38,3 +38,7 @@
   var logger = require('path/to/the/file/nd/name'); 
   const logger = require('path/to/the/file/nd/name'); 
   ```
+  
+## Servers And Clients
+
+In Node, We write our own Server Which Handle request and response. Unlike the other Programmoing language that uses tools like apache or else to do so. 
