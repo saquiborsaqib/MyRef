@@ -85,11 +85,14 @@
     
 
 ### Type Convesion
+  ```go
   DataType(var)
   int()
+  ```
 
 
 ### Conditional Statements
+  ```go
   if condition {
   
   }else if condition {
@@ -97,15 +100,19 @@
   }else{
   
   }
+  ```
   
 
 ### Itratative statements
+  ```go
   for initializer; condition; updation{
   
   }
+  ```
   
 
 ### switch statement
+  ```go 
   switch <choice>{
     case arg:
       //statement
@@ -114,67 +121,88 @@
     default:
       //statement
   }
-  
+  ```
 
 ### Arrays
-  1d
-    var [size]arr_name
-    var arr_name = [size] DataType
-    arr_name := [size] datatype{elements,elements,...}
+
+* #### 1d
+  ```go 
+  var [size]arr_name
+  var arr_name = [size] DataType
+  arr_name := [size] datatype{elements,elements,...}
+  ```
     
-  2d
-    var arr_name = [row][col] datatype {{element,element,..}{element,element,..}...{}}
+* #### 2d
+  ```go 
+  var arr_name = [row][col] datatype {{element,element,..}{element,element,..}...{}}
+  ```
 
-  Array functions:
-    len(array)
-
+* #### Array functions:
+  ```go
+  len(array)
+  ```
 
 ### Slices
+  ```go 
   var []slice_name = arr_name[startIndex : endIndex]
   
   //dynamic size array/slice
   var []s = make([]int, size)
-  --------or---------
+  //--------or---------
   s := make([]int, size)
+  ```
   
-  Slice functions:
-    len(slice_name)
-    cap(slice_name)
-    append(slice_name, element)
-
+* #### Slice functions:
+  ```go
+  len(slice_name)
+  cap(slice_name)
+  append(slice_name, element)
+  ```
 
 ### Range
+  ```go 
   for i, element := range arr{
      //Code
   }
-
+  ```
 
 ### Maps
-  Key Value Pairs | Un-Order | Faster then array
+
+Key Value Pairs | Un-Order | Faster then array
   
+  ```go 
   var mp map[string]int = map[string]int{
     "key" : value,
     "key" : value,
     ..,
-  }
-    ------or------
+  }```
+  
+  ------or------
+  
+  ```go 
   mp := map[string]int{
     "key" : value,
     "key" : value,
     ..,
   }
-    ------or------
+  ```
+  ------or------
+  ```go
   mp := make(map[string]int)  //creating empty map
+  ```
   
-  Exist Key??
+* #### Exist Key??
     value, exist := mp["key"]
   
-  Map Functions:
-    len(mp)
-    delete(mp,"key")
+* #### Map Functions:
+  ```go 
+  len(mp)
+  delete(mp,"key")
+  ```
     
-
 ### Functions
+
+  ```go
   func functionName(parameter type, ...) (label returnType, ..) {
   
     defer statement //these statements run after when function return.
@@ -183,46 +211,53 @@
     
     return var, ..
   }
-  
+
+
   //pointer to the function
-    function := func(){
+  function := func(){
     
-    }
-    
+  }
+
+
   //call function with defining
-    func(){
+  func(){
     
-    }()
-    
+  }()
+
+
   //passing function to the function
   
-    func function1 ( temp func(int)int ) int {
-      x := temp(5)
-      return x
-    }
+  func function1 ( temp func(int)int ) int {
+    x := temp(5)
+    return x
+  }
     
-    function2 := func ( a int ) int {
-      return a*a
-    }
+  function2 := func ( a int ) int {
+    return a*a
+  }
     
-    function1( function2 )
+  function1( function2 )
+
 
   //Returning function
     
-    func returnFunc(x string) func() {
-      return func(){
-        fmt.Println(x)
-      }
+  func returnFunc(x string) func() {
+    return func(){
+      fmt.Println(x)
     }
+  }
     
-    returnFunc("hello")()
-    ------or----------
-    z := returnFunc("hello")
-    z()
+  returnFunc("hello")()
+  //------or----------
+  z := returnFunc("hello")
+  z()
+  ```
     
 
 ### Pointers
+  ```go
   var ptr *dataType = &var
+  ```
   
 
 ### Structure 
