@@ -36,10 +36,17 @@
 ### Variables
 
 * #### Implicit
-    VariableName := Value
-    var VariableName = Value
+
+  ```
+  VariableName := Value
+  var VariableName = Value
+  ```
+  
 * #### Explicit
-    var VariableName <dataType> = Value
+
+  ```
+  var VariableName <dataType> = Value
+  ```
     
 Console I/O
   Output
