@@ -7,10 +7,11 @@
 `go run --work fileName.go //--work gives temporary location of binary file.`
   
 `go build -o "filename"`
+
 `go build`
   
-Resources:
-  https://github.com/gophertuts/go-basics/tree/master/go-learning-resources
+### Resources:
+https://github.com/gophertuts/go-basics/tree/master/go-learning-resources
   
 Anatonomy of Go Program
   package main
