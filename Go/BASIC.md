@@ -1,14 +1,30 @@
-Basic Go Commands
-  go env
+### Basic Go Commands
+
+`go env`
   
-  go run fileName.go
-  go run --work fileName.go //--work gives temporary location of binary file.
+`go run fileName.go`
   
-  go build -o "filename"
-  go build
+`go run --work fileName.go //--work gives temporary location of binary file.`
+  
+`go build -o "filename"`
+`go build`
   
 Resources:
-  [](https://github.com/gophertuts/go-basics/tree/master/go-learning-resources)
+  https://github.com/gophertuts/go-basics/tree/master/go-learning-resources
+  
+Anatonomy of Go Program
+  package main
+  import(
+    ...
+  )
+  const ...
+  var ...
+  func init(){
+    //initilize
+  }
+  func main(){
+    //execute
+  }
 
 Variables
   Implicit
