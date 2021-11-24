@@ -37,28 +37,28 @@
 
 * #### Implicit
 
-  ```
+  ```go
   VariableName := Value
   var VariableName = Value
   ```
   
 * #### Explicit
 
-  ```
+  ```go
   var VariableName <dataType> = Value
   ```
     
 ### Console I/O
 
 * #### Output
-  ```
+  ```go
   fmt.Printf("xyz %formater",var) 
   var := fmt.Sprintf()
   fmt.Println()
   ```
   
 * #### Input
-  ```
+  ```go
   scanner := bufio.NewScanner(os.Stdin)    
   scanner.Scan()
   input := scanner.Text()
@@ -67,14 +67,21 @@
     
 
 ### Convert String 
+  ```go
   strconv.ParseInt("String",Base,Size)
+  ```
   
 
 ### Operators
-  (Operator dont work on two different type of data in Go)
-  Arithmetic + - / * % 
-  Comparison < > <= >= != ==
-  Condition ! || &&
+
+(Operator dont work on two different type of data in Go)
+
+* #### Arithmetic 
+  `+` `-` `/` `*` `%` 
+* #### Comparison 
+  `<` `>` `<=` `>=` `!=` `==`
+* #### Condition 
+  `!` `||` `&&`
     
 
 ### Type Convesion
