@@ -1,7 +1,14 @@
 Basic Go Commands
+  go env
+  
   go run fileName.go
+  go run --work fileName.go //--work gives temporary location of binary file.
+  
   go build -o "filename"
   go build
+  
+Resources:
+  [](https://github.com/gophertuts/go-basics/tree/master/go-learning-resources)
 
 Variables
   Implicit
