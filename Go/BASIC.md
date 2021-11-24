@@ -15,24 +15,30 @@
 ### Anatonomy of Go Program
 ```go
   package main
+  
   import(
     ...
   )
+  
   const ...
+  
   var ...
+  
   func init(){
     //initilize
   }
+  
   func main(){
     //execute
   }
 ```
 
-Variables
-  Implicit
+### Variables
+
+#### * Implicit
     VariableName := Value
     var VariableName = Value
-  Explicit
+#### * Explicit
     var VariableName <dataType> = Value
     
 Console I/O
