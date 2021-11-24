@@ -49,15 +49,21 @@
   ```
     
 ### Console I/O
-  Output
-    fmt.Printf("xyz %formater",var) 
-    var := fmt.Sprintf()
-    fmt.Println()
+
+* #### Output
+  ```
+  fmt.Printf("xyz %formater",var) 
+  var := fmt.Sprintf()
+  fmt.Println()
+  ```
   
-  Input
-    scanner := bufio.NewScanner(os.Stdin)
-    scanner.Scan()
-    input := scanner.Text()
+* #### Input
+  ```
+  scanner := bufio.NewScanner(os.Stdin)    
+  scanner.Scan()
+  input := scanner.Text()
+  ```
+  
     
 
 ### Convert String 
