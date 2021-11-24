@@ -35,10 +35,10 @@
 
 ### Variables
 
-#### * Implicit
+* #### Implicit
     VariableName := Value
     var VariableName = Value
-#### * Explicit
+* #### Explicit
     var VariableName <dataType> = Value
     
 Console I/O
