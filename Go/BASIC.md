@@ -48,7 +48,7 @@
   var VariableName <dataType> = Value
   ```
     
-Console I/O
+### Console I/O
   Output
     fmt.Printf("xyz %formater",var) 
     var := fmt.Sprintf()
@@ -59,20 +59,24 @@ Console I/O
     scanner.Scan()
     input := scanner.Text()
     
-Convert String 
+
+### Convert String 
   strconv.ParseInt("String",Base,Size)
   
-Operators
+
+### Operators
   (Operator dont work on two different type of data in Go)
   Arithmetic + - / * % 
   Comparison < > <= >= != ==
   Condition ! || &&
     
-Type Convesion
+
+### Type Convesion
   DataType(var)
   int()
 
-Conditional Statements
+
+### Conditional Statements
   if condition {
   
   }else if condition {
@@ -81,12 +85,14 @@ Conditional Statements
   
   }
   
-Itratative statements
+
+### Itratative statements
   for initializer; condition; updation{
   
   }
   
-switch statement
+
+### switch statement
   switch <choice>{
     case arg:
       //statement
@@ -96,7 +102,8 @@ switch statement
       //statement
   }
   
-Arrays
+
+### Arrays
   1d
     var [size]arr_name
     var arr_name = [size] DataType
@@ -108,7 +115,8 @@ Arrays
   Array functions:
     len(array)
 
-Slices
+
+### Slices
   var []slice_name = arr_name[startIndex : endIndex]
   
   //dynamic size array/slice
@@ -121,12 +129,14 @@ Slices
     cap(slice_name)
     append(slice_name, element)
 
-Range
+
+### Range
   for i, element := range arr{
      //Code
   }
 
-Maps
+
+### Maps
   Key Value Pairs | Un-Order | Faster then array
   
   var mp map[string]int = map[string]int{
@@ -150,7 +160,8 @@ Maps
     len(mp)
     delete(mp,"key")
     
-Functions
+
+### Functions
   func functionName(parameter type, ...) (label returnType, ..) {
   
     defer statement //these statements run after when function return.
@@ -196,10 +207,12 @@ Functions
     z := returnFunc("hello")
     z()
     
-Pointers
+
+### Pointers
   var ptr *dataType = &var
   
-Structure 
+
+### Structure 
 
   Build Custom Types, GoLang dont have class, 
   
@@ -218,19 +231,23 @@ Structure
       //code
     }
     
-Interface (Polymorphism)
+
+### Interface (Polymorphism)
   type InterfaceName interface {
     //............
   }
   
-Exported & Unexported / viewable & not viewable
+
+### Exported & Unexported / viewable & not viewable
   In go, fields and variables that start with an Uppercase letter are "Exported", and are visible to other packages. 
   Fields that start with a lowercase letter are "unexported", and are only visible inside their own package.
 
 
-Inheritance (Embedded types)
+
+### Inheritance (Embedded types)
 promotion
 
-Redis
+
+### Redis
   The open source community actively supports quite a few client libraries, including Redigo, Radix and go-redis/redis.
   
