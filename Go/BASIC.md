@@ -12,7 +12,8 @@
   
 ### Resources: https://github.com/gophertuts/go-basics/tree/master/go-learning-resources
   
-Anatonomy of Go Program
+### Anatonomy of Go Program
+```go
   package main
   import(
     ...
@@ -25,6 +26,7 @@ Anatonomy of Go Program
   func main(){
     //execute
   }
+```
 
 Variables
   Implicit
