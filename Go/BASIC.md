@@ -175,19 +175,18 @@ Key Value Pairs | Un-Order | Faster then array
     "key" : value,
     "key" : value,
     ..,
-  }```
+  }
   
-  ------or------
-  
-  ```go 
+  //------or------
+   
   mp := map[string]int{
     "key" : value,
     "key" : value,
     ..,
   }
-  ```
-  ------or------
-  ```go
+  
+  //------or------
+  
   mp := make(map[string]int)  //creating empty map
   ```
   
@@ -262,8 +261,9 @@ Key Value Pairs | Un-Order | Faster then array
 
 ### Structure 
 
-  Build Custom Types, GoLang dont have class, 
+Build Custom Types, GoLang dont have class, 
   
+  ```go
   type SName struct {
     //state (fields)
     var dataType
@@ -273,29 +273,34 @@ Key Value Pairs | Un-Order | Faster then array
   var obj SName = SName{value, value}
   obj := SName{value, value}
   obj := SName{var:value, var2:value}
-
-  //Behaviour (Methods)
-    func (representer structName) methodName() returnType {
-      //code
-    }
+  ```
+  
+* #### Behaviour (Methods)
+  ```go
+  func (representer structName) methodName() returnType {
+    //code
+  }
+  ```
     
 
 ### Interface (Polymorphism)
+  ```go 
   type InterfaceName interface {
     //............
   }
+  ```
   
 
 ### Exported & Unexported / viewable & not viewable
-  In go, fields and variables that start with an Uppercase letter are "Exported", and are visible to other packages. 
-  Fields that start with a lowercase letter are "unexported", and are only visible inside their own package.
 
+In go, fields and variables that start with an Uppercase letter are "Exported", and are visible to other packages. 
 
+Fields that start with a lowercase letter are "unexported", and are only visible inside their own package.
 
 ### Inheritance (Embedded types)
+
 promotion
 
-
 ### Redis
-  The open source community actively supports quite a few client libraries, including Redigo, Radix and go-redis/redis.
-  
+
+The open source community actively supports quite a few client libraries, including Redigo, Radix and go-redis/redis.
