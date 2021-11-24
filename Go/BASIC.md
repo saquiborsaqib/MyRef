@@ -13,6 +13,8 @@
 ---
   
 ### Resources: https://github.com/gophertuts/go-basics/tree/master/go-learning-resources
+
+---
   
 ### Anatonomy of Go Program
 ```go
@@ -35,6 +37,8 @@
   }
 ```
 
+---
+
 ### Variables
 
 * #### Implicit
@@ -49,7 +53,9 @@
   ```go
   var VariableName <dataType> = Value
   ```
-    
+   
+---
+   
 ### Console I/O
 
 * #### Output
@@ -66,13 +72,14 @@
   input := scanner.Text()
   ```
   
-    
+--- 
 
 ### Convert String 
   ```go
   strconv.ParseInt("String",Base,Size)
   ```
-  
+
+---
 
 ### Operators
 
@@ -85,13 +92,15 @@
 * #### Condition 
   `!` `||` `&&`
     
+---
 
 ### Type Convesion
   ```go
   DataType(var)
   int()
   ```
-
+  
+---
 
 ### Conditional Statements
   ```go
@@ -104,6 +113,7 @@
   }
   ```
   
+---
 
 ### Itratative statements
   ```go
@@ -112,6 +122,7 @@
   }
   ```
   
+---
 
 ### switch statement
   ```go 
@@ -124,6 +135,8 @@
       //statement
   }
   ```
+
+---
 
 ### Arrays
 
@@ -144,6 +157,8 @@
   len(array)
   ```
 
+---
+
 ### Slices
   ```go 
   var []slice_name = arr_name[startIndex : endIndex]
@@ -161,12 +176,16 @@
   append(slice_name, element)
   ```
 
+---
+
 ### Range
   ```go 
   for i, element := range arr{
      //Code
   }
   ```
+
+---
 
 ### Maps
 
@@ -200,7 +219,9 @@ Key Value Pairs | Un-Order | Faster then array
   len(mp)
   delete(mp,"key")
   ```
-    
+
+---
+
 ### Functions
 
   ```go
@@ -255,11 +276,14 @@ Key Value Pairs | Un-Order | Faster then array
   ```
     
 
+---
+
 ### Pointers
   ```go
   var ptr *dataType = &var
   ```
   
+---
 
 ### Structure 
 
@@ -284,6 +308,7 @@ Build Custom Types, GoLang dont have class,
   }
   ```
     
+---
 
 ### Interface (Polymorphism)
   ```go 
@@ -292,6 +317,7 @@ Build Custom Types, GoLang dont have class,
   }
   ```
   
+---
 
 ### Exported & Unexported / viewable & not viewable
 
@@ -299,9 +325,13 @@ In go, fields and variables that start with an Uppercase letter are "Exported", 
 
 Fields that start with a lowercase letter are "unexported", and are only visible inside their own package.
 
+---
+
 ### Inheritance (Embedded types)
 
 promotion
+
+---
 
 ### Redis
 
