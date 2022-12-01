@@ -25,6 +25,6 @@ Portable artifact, easily shared and moved around.
   - ` docker ps -a `
   - ` docker pull image:version-number `
   - ` docker run image `
-  - ` docker run -pHostPort:ContainerPort image
+  - ` docker run -pHostPort:ContainerPort image `
   - ` docker stop container-id `
   - ` docker start container-id `
