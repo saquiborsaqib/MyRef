@@ -17,8 +17,14 @@ Portable artifact, easily shared and moved around.
     - Artifact, that can be moved around
     - `not running` 
   - Container
-    - After running an image it is a container 
+    - CONTAINER is a running environment for IMAGE
 
-#### Common Commands:
-  - ` docker pull image `
+#### Basic Commands:
+  - ` docker images `
+  - ` docker ps `
+  - ` docker ps -a `
+  - ` docker pull image:version-number `
   - ` docker run image `
+  - ` docker run -pHostPort:ContainerPort image
+  - ` docker stop container-id `
+  - ` docker start container-id `
