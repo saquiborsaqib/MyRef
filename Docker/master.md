@@ -11,7 +11,13 @@ Portable artifact, easily shared and moved around.
   - Mostly Linux Base Image, because small size 
   - Application image on top
 
-#### Docker Image -vs- Docker Container  
+#### Docker Image -vs- Docker Container 
+  - Image 
+    - The Actual Package
+    - Artifact, that can be moved around
+    - `not running` 
+  - Container
+    - After running an image it is a container 
 
 #### Common Commands:
   - ` docker pull image `
