@@ -37,15 +37,15 @@ int main() {
 In this example, the division operation (`numerator / denominator`) can result in a division by zero exception. The exception is caught by the catch block, and the error message is displayed to the console.
 
 ## Throw statement:
-The throw statement is used to explicitly throw an exception. It is typically used within the try block when an exceptional condition occurs. The syntax is as follows:
-cpp
-Copy code
+The `throw` statement is used to explicitly throw an exception. It is typically used within the `try` block when an exceptional condition occurs. 
+The syntax is as follows:
+```cpp
 throw ExceptionType(arguments);
-The throw statement is followed by the type of the exception to be thrown (ExceptionType) and, optionally, any arguments required by the exception's constructor.
-Here's an example that demonstrates the usage of the throw statement:
+```
+- The `throw` statement is followed by the type of the exception to be thrown (`ExceptionType`) and, optionally, any arguments required by the exception's constructor.
 
-cpp
-Copy code
+Here's an example that demonstrates the usage of the throw statement:
+```cpp
 #include <iostream>
 #include <stdexcept>
 
@@ -65,23 +65,26 @@ int main() {
 
     return 0;
 }
-In this example, the divide function checks if the denominator is zero and throws a std::runtime_error with the error message "Division by zero" if it is. The exception is then caught in the catch block, and the error message is displayed.
+```
+In this example, the `divide` function checks if the denominator is zero and throws a `std::runtime_error` with the error message "Division by zero" if it is. The exception is then caught in the catch block, and the error message is displayed.
 
-Catch block:
-The catch block is used to handle specific types of exceptions. It follows the try block and contains code that executes when a matching exception is thrown. The syntax is as follows:
-cpp
-Copy code
+## Catch block:
+The `catch` block is used to handle specific types of exceptions. It follows the `try` block and contains code that executes when a matching exception is thrown. 
+
+The syntax is as follows:
+```cpp
 try {
     // Code that might throw an exception
 } catch (ExceptionType& e) {
     // Exception handling code
 }
-The catch block specifies the type of exception it can handle (ExceptionType), followed by a reference to the exception object (& e in the example above).
-The exception object e can be used within the catch block to access information about the exception, such as the error message.
+```
+- The `catch` block specifies the type of exception it can handle (`ExceptionType`), followed by a reference to the exception object (`& e` in the example above).
+- The exception object `e` can be used within the catch block to access information about the exception, such as the error message.
+
 Here's an example that demonstrates the usage of a catch block:
 
-cpp
-Copy code
+```cpp
 #include <iostream>
 #include <stdexcept>
 
@@ -94,4 +97,5 @@ int main() {
 
     return 0;
 }
-In this example, a std::runtime_error exception is explicitly thrown in the try block. The catch block catches the exception and prints the error message to the console.
+```
+In this example, a `std::runtime_error` exception is explicitly thrown in the try block. The catch block catches the exception and prints the error message to the console.
