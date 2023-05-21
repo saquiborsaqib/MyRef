@@ -1,4 +1,4 @@
-### 1. Try block:
+1. ## Try block:
 The try block is used to enclose the section of code where an exception might occur. It is followed by one or more catch blocks to handle specific types of exceptions. The syntax is as follows:
 cpp
 Copy code
