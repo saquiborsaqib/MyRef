@@ -1,5 +1,5 @@
 ## Try block:
-The __try__ block is used to enclose the section of code where an exception might occur. It is followed by one or more __catch__ blocks to handle specific types of exceptions. 
+The `try` block is used to enclose the section of code where an exception might occur. It is followed by one or more `catch` blocks to handle specific types of exceptions. 
 The syntax is as follows:
 ```cpp
 try {
@@ -14,12 +14,12 @@ try {
 ```
 - The `try` block contains the code that may potentially throw an exception.
 - Multiple `catch` blocks can be used to handle different types of exceptions. The catch blocks are evaluated sequentially, and the first matching catch block is executed.
-- Each `catch` block specifies the type of exception it can handle, denoted by `ExceptionType`, followed by a reference to the exception object (& e in the example above).
-The catch block for ellipsis (...) is a catch-all block that can handle any type of exception that is not caught by the preceding catch blocks.
+- Each `catch` block specifies the type of exception it can handle, denoted by `ExceptionType`, followed by a reference to the exception object (`& e` in the example above).
+- The catch block for ellipsis (`...`) is a catch-all block that can handle any type of exception that is not caught by the preceding catch blocks.
+
 Here's an example that demonstrates the basic syntax of a try-catch block:
 
-cpp
-Copy code
+```cpp
 #include <iostream>
 
 int main() {
@@ -33,9 +33,10 @@ int main() {
 
     return 0;
 }
-In this example, the division operation (numerator / denominator) can result in a division by zero exception. The exception is caught by the catch block, and the error message is displayed to the console.
+```
+In this example, the division operation (`numerator / denominator`) can result in a division by zero exception. The exception is caught by the catch block, and the error message is displayed to the console.
 
-Throw statement:
+## Throw statement:
 The throw statement is used to explicitly throw an exception. It is typically used within the try block when an exceptional condition occurs. The syntax is as follows:
 cpp
 Copy code
