@@ -1,7 +1,6 @@
-1. ## Try block:
+## Try block:
 The try block is used to enclose the section of code where an exception might occur. It is followed by one or more catch blocks to handle specific types of exceptions. The syntax is as follows:
-cpp
-Copy code
+```cpp
 try {
     // Code that might throw an exception
 } catch (ExceptionType1& e1) {
@@ -11,6 +10,7 @@ try {
 } catch (...) {
     // Catch-all block for handling any other exceptions
 }
+```
 The try block contains the code that may potentially throw an exception.
 Multiple catch blocks can be used to handle different types of exceptions. The catch blocks are evaluated sequentially, and the first matching catch block is executed.
 Each catch block specifies the type of exception it can handle, denoted by ExceptionType, followed by a reference to the exception object (& e in the example above).
