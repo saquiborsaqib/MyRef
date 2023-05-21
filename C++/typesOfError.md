@@ -1,5 +1,5 @@
 1. Syntax errors:
-  Syntax errors occur when the code violates the rules of the programming language's syntax. These errors prevent the code from being compiled and executed. Examples of syntax errors include missing semicolons, mismatched parentheses, or incorrect keywords.
+Syntax errors occur when the code violates the rules of the programming language's syntax. These errors prevent the code from being compiled and executed. Examples of syntax errors include missing semicolons, mismatched parentheses, or incorrect keywords.
 
 2. Logic errors:
   Logic errors occur when there is a flaw in the program's logic or algorithm. These errors do not cause the program to crash or produce compiler errors, but they lead to incorrect or unexpected behavior. Logic errors can result in incorrect calculations, incorrect conditionals, or unexpected program flow.
