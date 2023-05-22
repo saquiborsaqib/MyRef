@@ -10,8 +10,5 @@ Syntax errors occur when the code violates the rules of the programming language
 4. Linker errors:
   Linker errors occur during the linking phase of the program's compilation process. These errors arise when the linker cannot resolve references to functions or variables, such as missing function definitions or unresolved external symbols. Linker errors typically occur when there are issues with library dependencies or when there are inconsistencies in the program's linkage.
 
-5. Compiler errors:
-  Compiler errors occur during the compilation process when the compiler detects issues that prevent the code from being translated into machine-executable instructions. Compiler errors can include syntax errors, type errors, or issues related to the use of language features. Compiler errors need to be resolved before the program can be successfully compiled and executed.
-
-6. Assertion failures:
-  Assertions are statements used to verify assumptions made during program development. Assertion failures occur when an assertion condition is evaluated to be false. Assertion failures indicate logical errors or violations of assumptions and are typically used for debugging and development purposes.
+5. Semantic errors:
+  When a sentence is syntactically correct but has no meaning, semantic errors occur. This is similar to grammatical errors. If an expression is entered on the left side of the assignment operator, a semantic error may occur. 
