@@ -4,8 +4,7 @@ Portable artifact, easily shared and moved around.
 Makes Development and Deployment more effecient.
 
 #### Where do Containers lives?  *--------- in Container Repository.*:
-  - Private 
-  - Public like DockerHub
+  These Repositories can be Private or Public, like DockerHub.
 
 #### What is Container 
   - Layers of images 
