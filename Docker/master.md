@@ -3,7 +3,7 @@ A way to package application with all the necessary dependencies and configurati
 Portable artifact, easily shared and moved around.
 Makes Development and Deployment more effecient.
 
-#### Where do Containers lives?  *in repositories*:
+#### Where do Containers lives?  *--------- in Container Repository.*:
   - Private 
   - Public like DockerHub
 
