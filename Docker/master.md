@@ -1,8 +1,9 @@
 ### Containerization 
 A way to package application with all the necessary dependencies and configuration.
 Portable artifact, easily shared and moved around.
+Makes Development and Deployment more effecient.
 
-#### Containers lives in repositories:
+#### Where do Containers lives?  *in repositories*:
   - Private 
   - Public like DockerHub
 
