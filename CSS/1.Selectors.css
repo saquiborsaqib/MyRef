@@ -70,6 +70,21 @@ p, span, a, li, #id, .class{
 
 }
 
+/************Siblings Combinators**********************************
+* Selects elements that share the same parent and are on the same level in the hierarchy.
+*/
+#sibling1 + #sibling2 {
+  property: value; /* Define the properties and values for #sibling2 when it directly follows #sibling1 */
+}
+
+/************General Sibling Combinator*****************************
+* Selects all elements that are siblings of a specified element.
+*/
+#sibling1 ~ .siblings {
+  property: value; /* Define the properties and values for elements with class "siblings" that are siblings of #sibling1 */
+}
+
+
 /**********Attributes selector***********************************
 This only select the tag which have an attribute and a specific value
 it also supports pattern matching like:
@@ -78,6 +93,13 @@ it also supports pattern matching like:
 	~ substring symbol*/
 tag_name[attribute="value"]{
 
+}
+
+/************Attributes Selector with Regular Expressions*************
+* Enhance the understanding of attribute selectors by introducing regular expressions.
+*/
+input[type^="text"] {
+  property: value; /* Define the properties and values for input elements with a type attribute starting with "text" */
 }
 
 /********Pseudo Classes****************************************
