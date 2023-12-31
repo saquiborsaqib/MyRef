@@ -1,50 +1,51 @@
-/* Class */
-	.class_name{
-		_____:_______;
-		_____:_______;
-	}
+/********************** Class Selector ***************************************/
+.class_name {
+    property: value;
+    property: value;
+}
 
-/* Id */
-	#id_name{
-		_____:_______;
-		_____:_______;
-	}
+/********************** ID Selector ***************************************/
+#id_name {
+    property: value;
+    property: value;
+}
 
-/**********************Tag***************************************/
-	tag_name{
-		_____:_______;
-		_____:_______;
-	}
+/********************** Tag Selector ***************************************/
+tag_name {
+    property: value;
+    property: value;
+}
 
-/***************Specificity of Rules in CSS******************************
-* In CSS every selector has a different piriority.
-* like:
-* ID has 100 points,
-* CLASS has 10 points,and
-* ELEMENT has 1 points.
-* Higher point selector override the rule of selector with less points.
+/*************** Specificity of Rules in CSS ******************************
+* In CSS, every selector has a different priority.
+* Specificity is a measure of how specific a selector's targeting is.
+* ID has the highest specificity (100 points),
+* CLASS has medium specificity (10 points), and
+* ELEMENT has the lowest specificity (1 point).
+* A higher specificity selector overrides the rules of selectors with lower specificity.
 ***********************************************************************/
 
-/****************Important Decaration*********************************
-it override ever selector rule no matter what there points is*/
-p{
-  color:red !important;
+/**************** Important Declaration *********************************
+* The `!important` declaration overrides any other rule, regardless of specificity.
+* Use it sparingly as it can make debugging and maintaining the code challenging.
+*/
+p {
+    color: red !important;
 }
 
-
-/***************Targeting Multiple Element***************************/
-p, span, a, li, #id, .class{
-  _______:_____;
+/*************** Targeting Multiple Elements ***************************/
+p, span, a, li, #id, .class {
+    property: value;
 }
 
-/*********Universal Selector : Targets All Elements******************/
-*{
+/********* Universal Selector: Targets All Elements ******************/
+* {
 
 }
 
-/***********************hierarchy*************************************
-*Every element nested into another elment is the Descendant of the overlaping element.
-*like:
+/*********************** Hierarchy *************************************
+* Every element nested into another element is the Descendant of the overlapping element.
+* Example:
 <div id="parent">
   <p></p>
   <div id="child">
@@ -53,100 +54,88 @@ p, span, a, li, #id, .class{
 </div>
 */
 
-/**************Descendants Selector********************************/
-#parent p{
+/************** Descendants Selector ********************************/
+#parent p {
 
 }
 
-/************Child Selector***************************************
-  >  Direct Descendant sign*/
-#parent > p{
-
-}
-
-/***********Adjacent Selector************************************
-	+  next element/adjecent elment*/
-#parent p + #child{
-
-}
-
-/************Siblings Combinators**********************************
-* Selects elements that share the same parent and are on the same level in the hierarchy.
+/************ Child Selector ***************************************
+  * Selects only direct descendants using the > sign
 */
-#sibling1 + #sibling2 {
-  property: value; /* Define the properties and values for #sibling2 when it directly follows #sibling1 */
+#parent > p {
+
 }
 
-/************General Sibling Combinator*****************************
+/*********** Adjacent Selector or Siblings Selector ************************************
+	* + Selects the next element/adjacent element
+	* Selects elements that share the same parent and are on the same level in the hierarchy.
+*/
+#parent p + #child {
+
+}
+#sibling1 + #sibling2 {
+    property: value; /* Define the properties and values for #sibling2 when it directly follows #sibling1 */
+}
+
+/************ General Sibling Combinator *****************************
 * Selects all elements that are siblings of a specified element.
 */
 #sibling1 ~ .siblings {
-  property: value; /* Define the properties and values for elements with class "siblings" that are siblings of #sibling1 */
+    property: value; /* Define the properties and values for elements with class "siblings" that are siblings of #sibling1 */
 }
 
-
-/**********Attributes selector***********************************
-This only select the tag which have an attribute and a specific value
-it also supports pattern matching like:
-	^ start with symbol
-	$ end with symbol
-	~ substring symbol*/
-tag_name[attribute="value"]{
-
-}
-
-/************Attributes Selector with Regular Expressions*************
-* Enhance the understanding of attribute selectors by introducing regular expressions.
+/********** Attributes Selector ***********************************
+* Selects elements with a specific attribute and value.
+* Supports pattern matching (regular expressions):
+	^ for starts with
+	$ for ends with
+	~ for substring
 */
+tag_name[attribute="value"] {
+
+}
 input[type^="text"] {
-  property: value; /* Define the properties and values for input elements with a type attribute starting with "text" */
+    property: value; /* Define the properties and values for input elements with a type attribute starting with "text" */
 }
 
-/********Pseudo Classes****************************************
-*	Special Keywords that go after selectors
+/******** Pseudo Classes ****************************************
+* Special keywords that go after selectors.
+* Used to target special behavioral states or advanced structural elements.
+* Two main groups: Dynamic and Structural.
+*/
+selector: keyword {
 
-*	They can be used to target:
-		- Special behavioural states
-		- Advanced structural Elements
+}
+/*********** Dynamic Pseudo Classes **********************************
+* Based on behavior, allowing styling in relation to user actions.
+* Popular ones include:
+  - :hover
+  - :active
+  - :visited
+*/
+selector: hover {
+    property: value; /* Define the properties and values for the hover state of the selector */
+}
+/*********** Structural Pseudo Classes ********************************
+* Advanced structural techniques not possible with ordinary CSS selectors.
+* Examples include:
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :nth-child(number)
+  - :nth-child(even)
+  - :nth-child(odd)
+  - :nth-child(formulas)
+  - :nth-of-type()
+*/
+selector: first-child {
+    property: value; /* Define the properties and values for the first child of the selector */
+}
 
-*	Pseudo Class Groups:
-		DYNAMIC - based on behaviour
-		Allow us to style an element in relation to user actions,
-		such as:
-			- Whether a link is being hovered over
-			- Whether a button is being pressed
-			- whether a tick boxhas been checked
-		Most popular dynamic Pseudo classes:
-			- :hover
-			- :active
-			- :visited
-
-		STRUCTURAL - advanced STRUCTURAL
-		Allow us to style elements based on advanced structural techniques not possible from ordinary CSS selectors,
-		such as:
-			- parent-child relationships
-			- the 5th <li>tap in a list
-			- a parent tag that has no children
-		someof them are:
-			:first-child
-			:last-child
-			:first-of-type
-			:last-of-type
-			:nth-child(number)
-			:nth-child(even)
-			:nth-child(odd)
-			:nth-child(formulas)
-			:nth-of-type()
-
-* Syntax:
-		selector:keyword{
-
-		}
-*************************************************************/
-
-/**************Combining Selectors*************************
+/************** Combining Selectors *************************
 This means select a paragraph tag with class description.
-Dont put space in between otherwise it become the Descendant selector*/
-p.description{
+Don't put space in between otherwise it becomes the Descendant selector*/
+p.description {
 
 }
