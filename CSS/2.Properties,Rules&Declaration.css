@@ -1,11 +1,19 @@
 /************* Size Measurements ******************
   ABSOLUTE
-    - Pixels (px)
+    - Pixels (px): 
+      This is a fixed unit of measurement. 
+      One pixel is a single dot on a screen, and it doesn't change size regardless of the screen's resolution. 
+      Pixels are commonly used for defining precise sizes.
 
   RELATIVE
-    - Em's (em)
-    - Percentage (%)
-  Relative measurements are great when working with responsive designs
+    - Em's (em):
+      Relative to the font-size of the parent element. 
+      For example, if the font size of the parent element is 16px, 1em would be equal to 16px. 
+      This makes it useful for maintaining scalability.
+    - Percentage (%):
+      Relative to the size of the parent element. 
+      For example, if a parent element has a width of 200px and a child element is set to 50%, the child element will have a width of 100px.
+  Relative measurements are particularly useful in responsive web design as they adapt well to different screen sizes and resolutions.
 */
 
 /************** The BOX Model ***********************
