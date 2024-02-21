@@ -1,0 +1,34 @@
+//Rust Notes
+
+Ownership and Borrowing:
+Ownership: Rust's unique feature is its ownership system. Each value in Rust has a variable that is its "owner," and there can only be one owner at a time. This system helps prevent memory leaks and data races.
+Borrowing: Instead of passing ownership, Rust allows borrowing references to values. Borrowing can be either mutable or immutable, and the borrowing rules are enforced by the compiler.
+
+Lifetime System:
+Rust has a lifetime system to ensure that references are valid for the appropriate duration. Lifetimes help prevent dangling references and contribute to memory safety.
+
+Traits:
+Traits are similar to interfaces in other languages and are used to define shared behavior in Rust. Types can implement traits, enabling code reuse and polymorphism.
+
+Pattern Matching:
+Rust has a powerful pattern matching system called "match." It allows for concise and expressive handling of different cases, making code more readable.
+
+Concurrency:
+Rust supports concurrent programming with threads. Ownership and borrowing rules help prevent data races, and the standard library includes the std::sync module for synchronization primitives.
+
+Error Handling:
+Rust uses a combination of the Result and Option enums for explicit error handling. The Result type is often used to represent operations that can return an error.
+
+Cargo:
+Cargo is Rust's package manager and build system. It simplifies project management, dependency resolution, and building. It also provides tools for testing and documentation.
+
+Safety Features:
+Rust is designed with a strong focus on safety. The compiler catches many common programming errors at compile time, such as null pointer dereferences and buffer overflows.
+Memory Safety Without Garbage Collection:
+Rust achieves memory safety without a garbage collector by using a combination of ownership, borrowing, and a lifetime system. This allows for efficient memory management without sacrificing safety.
+
+Zero-cost Abstractions:
+Rust provides high-level abstractions without sacrificing performance. The abstractions are designed to compile down to efficient machine code.
+Community and Ecosystem:
+
+Rust has a vibrant and growing community. It is used in various domains, including systems programming, web development (via frameworks like Rocket), and embedded systems.
